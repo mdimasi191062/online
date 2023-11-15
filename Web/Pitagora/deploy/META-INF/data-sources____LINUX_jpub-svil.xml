@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<data-sources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/oracleas/schema http://xmlns.oracle.com/oracleas/schema/data-sources-10_1.xsd" version="10.1" xmlns="http://xmlns.oracle.com/oracleas/schema">
+  <connection-pool name="jdev-connection-pool-Pitagora">
+    <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="jpub" password="->DataBase_User_s82Xz5TH91BQ6d9lorUz0WRo1Npd4-_l" url="jdbc:oracle:thin:@10.50.16.7:1521:JPUB"/>
+  </connection-pool>
+  <managed-data-source name="jdev-connection-managed-Pitagora" jndi-name="jdbc/PitagoraDS" connection-pool-name="jdev-connection-pool-Pitagora"/>
+  <native-data-source name="jdev-connection-native-Pitagora" jndi-name="jdbc/PitagoraCoreDS" url="jdbc:oracle:thin:@10.50.16.7:1521:JPUB" user="jpub" password="->DataBase_User_qGtmob_pYgTwTu1h_9DcsrvBAjj5DmYx" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+</data-sources>

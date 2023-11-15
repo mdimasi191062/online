@@ -1,0 +1,321 @@
+moduleType=ear
+applicationID=jpub-rac
+bindWebApp=http-web-site
+parent=
+moduleID=.
+doctype=orion-application
+<?xml version="1.0" encoding="UTF-8"?>
+<orion-application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/orion-application-10_0.xsd" batch-compile="true" autocreate-tables="true" autodelete-tables="false" treat-zero-as-null="false" prepend-deployment-name="false" see-parent-data-sources="false" taskmanager-interval="0">
+	<ejb-module path="ejb.jar" remote="false">
+	</ejb-module>
+	<web-module path="war.war" id="war">
+	</web-module>
+	<jazn provider="XML" location="jazn-data.xml" default-realm="jazn.com">
+	</jazn>
+	<data-sources path="./data-sources.xml">
+	</data-sources>
+</orion-application>
+moduleID=ejb.jar
+doctype=orion-ejb-jar
+<?xml version="1.0" encoding="UTF-8"?>
+<orion-ejb-jar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/orion-ejb-jar-10_0.xsd">
+	<enterprise-beans>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_6tree" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Security" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_6ANAG_UTENTEejb" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_6PROF_UTENTEejb" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_6ANAG_FUNZ" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_2PARAM_VALORIZ_CL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_2SCONTO_CL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_6MEM_FUNZ_PROF_OP_EL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Contratti" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Clienti" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_TipiCausale" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_OggettiFatturazione" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_ProdottiServizi" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_PrestazioniAggiuntive" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_AnagraficaMessaggi" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Tariffe" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Fasce" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_UnitaMisura" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_TipiOfferte" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_ClassiSconto" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_Tariffe" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Batch" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_TariffeSconti" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_AssociazioniOfPs" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_ClassOggFatt" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_Riba_Tariffe" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Frequenze" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Map" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_TipiContratto" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_SpesaComplessiva" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_AssocOggettiFatturazione" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Scarti" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_Batch" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_Scarti" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_Contratti" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Fatture" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_SpesaComplessiva" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_Fatture" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_ClassiSconto" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_NoteCredito" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_ValAttiva" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_Repricing" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment name="Ent_AssocOggettiFatturazione">
+		</session-deployment>
+		<session-deployment name="Ent_Scarti">
+		</session-deployment>
+		<session-deployment name="Ctr_Batch">
+		</session-deployment>
+		<session-deployment name="Ctr_Scarti">
+		</session-deployment>
+		<session-deployment name="Ctr_Contratti">
+		</session-deployment>
+		<session-deployment name="Ent_Fatture">
+		</session-deployment>
+		<session-deployment name="Ent_SpesaComplessiva">
+		</session-deployment>
+		<session-deployment name="Ctr_Fatture">
+		</session-deployment>
+		<session-deployment name="Ctr_ClassiSconto">
+		</session-deployment>
+		<session-deployment name="Ctr_NoteCredito">
+		</session-deployment>
+		<session-deployment name="Ctr_ValAttiva">
+		</session-deployment>
+		<session-deployment name="Ctr_Repricing">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_2ANAG_CICLI_FATRZEJB" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="AccountElabSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="BatchSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="CausaleSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="ClasseFattSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="CmbFunzioniSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="CmbStatiBatchSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="CmbUtentiSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="ContrattoSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="ElencoAccountPsSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="FunzionalitaSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="OggettoFattLstOfAssocbSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="ProdServSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="StatiElabBatchSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="SchedBatchSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="UnitaMisuraSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="ControlliSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="SitoSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="UnTerReteSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="AssOfPsXContrSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="FrequenzaSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="ModApplSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="AssOfPsSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_Sconti" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Sconti" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="OpzioniTariffaSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Batch_PRE" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_ExportPerSap" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="CtrContrattiSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="CtrRepricingSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="EntBatchSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="EntContrattiSTL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_TariffeSconti" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_Inventari" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Inventari" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="GestioneScartiPopolamento" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Servizi" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Offerte" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Prodotti" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_TariffeNew" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_OggettoFatturazioneNew" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_ModalitaApplicazione" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_TipoCausaleNew" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_FasceNew" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_ClassiScontoNew" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_RegoleTariffe" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Componenti" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_PrestazioniAggiuntiveNew" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_TariffeNew" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_BatchNew" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_ElabAttive" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="EURIBOR_CICLI_X_SERV" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_TipoRelazioni" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ctr_Catalogo" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="-1" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Catalogo" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="Ent_Statistiche" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="ISTAT" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_2TEST_AVANZ_COSTI_RICAVI" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_2RECORD_SCARTATO_CL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="LISTA_VERIFICA_ACCOUNT_CPM_CL" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="ChartEJB" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="FILTRO_MOV_NON_RICEJB" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_3GEST_TLCejb" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_6DETT_ALL_DBejb" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<session-deployment pool-cache-timeout="60" call-timeout="90000" copy-by-value="true" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" name="I5_2CONFR_INVENT" timeout="1800" idletime="300" memory-threshold="80" max-instances-threshold="90" resource-check-interval="180" passivate-count="-1" replication="none">
+		</session-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="AbortLstBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="AssOfPsBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="AssOfPsVerEsistAperteBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="AssOfPsVerifEsistBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="CsvBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="DatiCliBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="DoppioListinoBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="ElaborBatchBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="InsAssOfPsBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="OggFattBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="PeriodoRifBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="ScartiBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="TariffaBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="TariffaXContrBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="GestAssOfPsBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="AssOfPsXContrBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="CicloFatBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="ColocationBMP" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="I5_2ProcedureEmittenti" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="I5_1ACCOUNT" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="I5_2MOV_NON_RICEJB" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="I5_2Elab_Batch" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="I5_2CLAS_SCONTOEJB" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+		<entity-deployment call-timeout="90000" copy-by-value="true" exclusive-write-access="false" do-select-before-insert="true" isolation="committed" locking-mode="optimistic" max-instances="0" min-instances="0" max-tx-retries="0" tx-retry-wait="0" update-changed-fields-only="true" name="I5_2FASCIE" pool-cache-timeout="60" validity-timeout="0" force-update="false" delay-updates-until-commit="true" findByPrimaryKey-lazy-loading="true">
+		</entity-deployment>
+	</enterprise-beans>
+	<assembly-descriptor>
+		<default-method-access>
+			<security-role-mapping impliesAll="true" name="&lt;default-ejb-caller-role&gt;">
+			</security-role-mapping>
+		</default-method-access>
+	</assembly-descriptor>
+</orion-ejb-jar>
+moduleID=war.war
+doctype=orion-web-app
+<?xml version="1.0" encoding="UTF-8"?>
+<orion-web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/orion-web-10_0.xsd" always-redeploy="false" autojoin-session="true" default-buffer-size="2048" default-charset="iso-8859-1" development="false" directory-browsing="deny" enable-jsp-dispatcher-shortcut="true" file-modification-check-interval="1000" jsp-cache-tlds="standard" jsp-print-null="true" jsp-timeout="0" servlet-webdir="/servlet/" simple-jsp-mapping="false" temporary-directory="./temp" context-root="/jpub-rac">
+</orion-web-app>

@@ -1,0 +1,602 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ejb-deployment nselem="ejb-deployment" class="oracle.jdeveloper.deploy.ejb.EjbProfile" xmlns="http://xmlns.oracle.com/jdeveloper/101303/deploy/j2ee-ejb-jar">
+   <archiveOptions>
+      <additionalManifests/>
+      <compressed>false</compressed>
+      <hasManifest>true</hasManifest>
+      <mainClass/>
+   </archiveOptions>
+   <defaultConnection class="java.lang.String"/>
+   <deployClientMaxHeapSize/>
+   <earURL path="ejb.ear"/>
+   <enterpriseAppName>ejb</enterpriseAppName>
+   <fileGroups>
+      <groups>
+         <Item class="oracle.jdeveloper.deploy.common.ProjectFileGroup" internalName="legacy">
+            <contributors>
+               <autoInclude>true</autoInclude>
+               <deploySourceAs>0</deploySourceAs>
+               <files>
+                  <Item path="public_html/WEB-INF/web.xml"/>
+                  <Item path="public_html/anag_funz/jsp/gest_anag_funz.jsp"/>
+                  <Item path="public_html/anag_funz/jsp/lista_anag_funz.jsp"/>
+                  <Item path="public_html/anag_funz/jsp/messaggio.jsp"/>
+                  <Item path="public_html/anag_funz/jsp/salva_funz.jsp"/>
+                  <Item path="public_html/anag_funz/jsp/stampa_anag_funz.jsp"/>
+                  <Item path="public_html/associazione_pfo/jsp/del_associazione.jsp"/>
+                  <Item path="public_html/associazione_pfo/jsp/ins_associazione.jsp"/>
+                  <Item path="public_html/associazione_pfo/jsp/lista_associazioni.jsp"/>
+                  <Item path="public_html/associazione_pfo/jsp/messaggio.jsp"/>
+                  <Item path="public_html/associazione_pfo/jsp/mod_associazione.jsp"/>
+                  <Item path="public_html/associazione_pfo/jsp/salva_associazione.jsp"/>
+                  <Item path="public_html/associazione_pfo/jsp/stampa_associazione.jsp"/>
+                  <Item path="public_html/associazioni_of_ps/jsp/GestAssOfPsSp.jsp"/>
+                  <Item path="public_html/associazioni_of_ps/jsp/InsAssOfPsSp.jsp"/>
+                  <Item path="public_html/associazioni_of_ps/jsp/InsAssOfPsWfSp.jsp"/>
+                  <Item path="public_html/associazioni_of_ps/jsp/ListaAssOfPsSp.jsp"/>
+                  <Item path="public_html/associazioni_of_ps/jsp/ListaAssOfPsWfSp.jsp"/>
+                  <Item path="public_html/associazioni_of_ps_x_contr/jsp/GestAssOfPsXContrSp.jsp"/>
+                  <Item path="public_html/associazioni_of_ps_x_contr/jsp/InsAssOfPsXContrSp.jsp"/>
+                  <Item path="public_html/associazioni_of_ps_x_contr/jsp/InsAssOfPsXContrWfSp.jsp"/>
+                  <Item path="public_html/associazioni_of_ps_x_contr/jsp/ListaAssOfPsXContrSp.jsp"/>
+                  <Item path="public_html/associazioni_of_ps_x_contr/jsp/ListaAssOfPsXContrWfSp.jsp"/>
+                  <Item path="public_html/associazioni_ofps/jsp/cbn1_ins_ass_ofps_2_cl.jsp"/>
+                  <Item path="public_html/associazioni_ofps/jsp/cbn1_ins_ass_ofps_X_tipo_contr_2_cl.jsp"/>
+                  <Item path="public_html/associazioni_ofps/jsp/cbn1_ins_ass_ofps_X_tipo_contr_cl.jsp"/>
+                  <Item path="public_html/associazioni_ofps/jsp/cbn1_ins_ass_ofps_cl.jsp"/>
+                  <Item path="public_html/associazioni_ofps/jsp/cbn1_lista_ass_ofps_2_cl.jsp"/>
+                  <Item path="public_html/associazioni_ofps/jsp/cbn1_lista_ass_ofps_cl.jsp"/>
+                  <Item path="public_html/associazioni_ofps/jsp/cbn1_visdis_ass_offps_cl.jsp"/>
+                  <Item path="public_html/associazioni_ofps/jsp/msg_associazioni_ofps_cl.jsp"/>
+                  <Item path="public_html/batch_automatismo/jsp/lancio_batch_automatismo_2_cl.jsp"/>
+                  <Item path="public_html/batch_automatismo/jsp/lancio_batch_automatismo_cl.jsp"/>
+                  <Item path="public_html/batch_automatismo/jsp/sel_Account_Lancio_cl.jsp"/>
+                  <Item path="public_html/batch_automatismo/jsp/verifica_batch_automatismo_cl.jsp"/>
+                  <Item path="public_html/batch_prefatturazione/jsp/lancio_batch_prefatturazione_2_cl.jsp"/>
+                  <Item path="public_html/batch_prefatturazione/jsp/lancio_batch_prefatturazione_cl.jsp"/>
+                  <Item path="public_html/batch_prefatturazione/jsp/verifica_batch_prefatturazione_cl.jsp"/>
+                  <Item path="public_html/calcolo_penali_mensili/jsp/cbn1_lancio_calc_penali_cl.jsp"/>
+                  <Item path="public_html/calcolo_penali_mensili/jsp/cbn1_ver_calcolo_penali_cl.jsp"/>
+                  <Item path="public_html/calcolo_penali_mensili/jsp/cbn1_ver_cpm_lista_account_cl.jsp"/>
+                  <Item path="public_html/calcolo_penali_mensili/jsp/cbn1_vis_scarti_penali_cl.jsp"/>
+                  <Item path="public_html/calcolo_penali_mensili/jsp/flag_lancio.jsp"/>
+                  <Item path="public_html/calcolo_penali_mensili/jsp/messaggio.jsp"/>
+                  <Item path="public_html/calcolo_penali_mensili/jsp/salva_lancio_cpm_cl.jsp"/>
+                  <Item path="public_html/calcolo_penali_mensili/jsp/verifica_lancio_cpm_cl.jsp"/>
+                  <Item path="public_html/cicli_fatturazione/jsp/cancella_ciclo_cl.jsp"/>
+                  <Item path="public_html/cicli_fatturazione/jsp/cbn1_agg_ciclo_cl.jsp"/>
+                  <Item path="public_html/cicli_fatturazione/jsp/cbn1_lista_cicli_cl.jsp"/>
+                  <Item path="public_html/cicli_fatturazione/jsp/messaggio.jsp"/>
+                  <Item path="public_html/cicli_fatturazione/jsp/salva_ciclo_cl.jsp"/>
+                  <Item path="public_html/cicli_fatturazione/jsp/stampa_ciclo.jsp"/>
+                  <Item path="public_html/classi_sconto/jsp/cbn4_agg_clas_sconto_cl.jsp"/>
+                  <Item path="public_html/classi_sconto/jsp/cbn4_dis_clas_sconto_cl.jsp"/>
+                  <Item path="public_html/classi_sconto/jsp/cbn4_lista_clas_scon_cl.jsp"/>
+                  <Item path="public_html/classi_sconto/jsp/conf_dis_clas_scon_cl.jsp"/>
+                  <Item path="public_html/classi_sconto/jsp/messaggio.jsp"/>
+                  <Item path="public_html/classi_sconto/jsp/salva_clas_sconto_cl.jsp"/>
+                  <Item path="public_html/classi_sconto/jsp/stampa_clas_scon_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/PP_Combo_OggettiFatturazione_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/PP_Combo_TipiCausale_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/PP_Pag_Account_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/cbn1_Tipo_Causale_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/cbn1_scarti_2_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/cbn1_scarti_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/cbn1_sel_ps_2_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/cbn1_sel_ps_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/cbn1_sel_ps_x_tipo_contr_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/cbn1_verifica_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/cbn_dg_003_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/com_sel_gest_2_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/com_sel_gest_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/com_sel_gest_lista_cl.jsp"/>
+                  <Item path="public_html/classic_common/jsp/genericMsg_cl.jsp"/>
+                  <Item path="public_html/colocation/jsp/ListaAccountCol.jsp"/>
+                  <Item path="public_html/colocation/jsp/NuovaCol.jsp"/>
+                  <Item path="public_html/colocation/jsp/NuovaColWf.jsp"/>
+                  <Item path="public_html/colocation/jsp/VisAggCanCol.jsp"/>
+                  <Item path="public_html/common/htlm_ajax/messaggio.html"/>
+                  <Item path="public_html/common/htlm_ajax/orologio.html"/>
+                  <Item path="public_html/common/js/Common.js"/>
+                  <Item path="public_html/common/js/ControlliNumerici.js"/>
+                  <Item path="public_html/common/js/XML.js"/>
+                  <Item path="public_html/common/js/browserType.js"/>
+                  <Item path="public_html/common/js/calendar.js"/>
+                  <Item path="public_html/common/js/calendar1.js"/>
+                  <Item path="public_html/common/js/calendar2.js"/>
+                  <Item path="public_html/common/js/calendarold.js"/>
+                  <Item path="public_html/common/js/changeStatus.js"/>
+                  <Item path="public_html/common/js/comboCange.js"/>
+                  <Item path="public_html/common/js/funControlloData.js"/>
+                  <Item path="public_html/common/js/inputValue.js"/>
+                  <Item path="public_html/common/js/misc.js"/>
+                  <Item path="public_html/common/js/openDialog.js"/>
+                  <Item path="public_html/common/js/paginatore.js"/>
+                  <Item path="public_html/common/js/security.js"/>
+                  <Item path="public_html/common/js/size.js"/>
+                  <Item path="public_html/common/js/validateFunction.js"/>
+                  <Item path="public_html/common/js/viewState.js"/>
+                  <Item path="public_html/common/js_ajax/ajax.js"/>
+                  <Item path="public_html/common/jsp/GenericMsgSp.jsp"/>
+                  <Item path="public_html/common/jsp/TrackingErrorPage.jsp"/>
+                  <Item path="public_html/common/jsp/com_tc.jsp"/>
+                  <Item path="public_html/common/jsp/gestione_cache.jsp"/>
+                  <Item path="public_html/common/jsp/index_disconnect.jsp"/>
+                  <Item path="public_html/common/jsp/index_with_tree.jsp"/>
+                  <Item path="public_html/common/jsp/left.jsp"/>
+                  <Item path="public_html/common/jsp/main_disconnect.jsp"/>
+                  <Item path="public_html/common/jsp/top.jsp"/>
+                  <Item path="public_html/conf_stor_inventario/jsp/cbn1_lancio_csi_cl.jsp"/>
+                  <Item path="public_html/conf_stor_inventario/jsp/cbn1_scarti_inventario_cl.jsp"/>
+                  <Item path="public_html/conf_stor_inventario/jsp/cbn1_ver_csi_lista_account_cl.jsp"/>
+                  <Item path="public_html/conf_stor_inventario/jsp/cbn1_ver_inventario_cl.jsp"/>
+                  <Item path="public_html/conf_stor_inventario/jsp/flag_lancio.jsp"/>
+                  <Item path="public_html/conf_stor_inventario/jsp/messaggio.jsp"/>
+                  <Item path="public_html/conf_stor_inventario/jsp/salva_lancio_csi_cl.jsp"/>
+                  <Item path="public_html/conf_stor_inventario/jsp/stampa_scarti_inventario_cl.jsp"/>
+                  <Item path="public_html/conf_stor_inventario/jsp/verifica_lancio_csi_cl.jsp"/>
+                  <Item path="public_html/conguagli_cambi_tariffa/jsp/AccountCambiTariffaSp.jsp"/>
+                  <Item path="public_html/conguagli_cambi_tariffa/jsp/CongelaRepricing2Sp.jsp"/>
+                  <Item path="public_html/conguagli_cambi_tariffa/jsp/CongelaRepricingSp.jsp"/>
+                  <Item path="public_html/conguagli_cambi_tariffa/jsp/LancioRepricing2Sp.jsp"/>
+                  <Item path="public_html/conguagli_cambi_tariffa/jsp/LancioRepricingSp.jsp"/>
+                  <Item path="public_html/conguagli_cambi_tariffa/jsp/RepricingAccountSp.jsp"/>
+                  <Item path="public_html/conguagli_cambi_tariffa/jsp/VerificaCTAbortSp.jsp"/>
+                  <Item path="public_html/conguagli_cambi_tariffa/jsp/VerificaRepricingSp.jsp"/>
+                  <Item path="public_html/conguagli_cambi_tariffa/jsp/cbn1_lancio_repricing_2_cl.jsp"/>
+                  <Item path="public_html/conguagli_cambi_tariffa/jsp/cbn1_lancio_repricing_cl.jsp"/>
+                  <Item path="public_html/conguagli_cambi_tariffa/jsp/cbn1_ver_repricing_2_cl.jsp"/>
+                  <Item path="public_html/conguagli_cambi_tariffa/jsp/cbn1_ver_repricing_3_cl.jsp"/>
+                  <Item path="public_html/consuntivo_swn/jsp/lancio_rep_swn_2_cl.jsp"/>
+                  <Item path="public_html/consuntivo_swn/jsp/lancio_rep_swn_cl.jsp"/>
+                  <Item path="public_html/consuntivo_swn/jsp/lancio_valor_swn_2_cl.jsp"/>
+                  <Item path="public_html/consuntivo_swn/jsp/lancio_valor_swn_cl.jsp"/>
+                  <Item path="public_html/consuntivo_swn/jsp/ver_rep_swn_cl.jsp"/>
+                  <Item path="public_html/consuntivo_swn/jsp/ver_valor_swn_cl.jsp"/>
+                  <Item path="public_html/elab_attive/jsp/ctr_elab.jsp"/>
+                  <Item path="public_html/elab_attive/jsp/elab_desc_error.jsp"/>
+                  <Item path="public_html/elab_attive/jsp/elab_dett.jsp"/>
+                  <Item path="public_html/elab_attive/jsp/elab_run.jsp"/>
+                  <Item path="public_html/elab_attive/jsp/elab_scarti.jsp"/>
+                  <Item path="public_html/elab_attive/jsp/elab_ver.jsp"/>
+                  <Item path="public_html/elab_attive/jsp/select_elab.jsp"/>
+                  <Item path="public_html/estrazioni/jsp/download.jsp"/>
+                  <Item path="public_html/estrazioni/jsp/download_file.jsp"/>
+                  <Item path="public_html/estrazioni/jsp/estrazioni.jsp"/>
+                  <Item path="public_html/estrazioni/jsp/ricaviAreaCentrale.jsp"/>
+                  <Item path="public_html/euribor/jsp/cbn1_agg_euribor_cl.jsp"/>
+                  <Item path="public_html/euribor/jsp/cbn1_lista_euribor_cl.jsp"/>
+                  <Item path="public_html/euribor/jsp/gestione_euribor_cl.jsp"/>
+                  <Item path="public_html/euribor/jsp/messaggio_euribor_cl.jsp"/>
+                  <Item path="public_html/euribor/jsp/stampa_euribor.jsp"/>
+                  <Item path="public_html/euribor_j2/jsp/cbn1_agg_euribor_cl.jsp"/>
+                  <Item path="public_html/euribor_j2/jsp/cbn1_lista_euribor_cl.jsp"/>
+                  <Item path="public_html/euribor_j2/jsp/gestione_euribor_cl.jsp"/>
+                  <Item path="public_html/euribor_j2/jsp/messaggio_euribor_cl.jsp"/>
+                  <Item path="public_html/euribor_j2/jsp/stampa_euribor.jsp"/>
+                  <Item path="public_html/export_per_sap/jsp/lancio_batch_ex_sap_2_cl.jsp"/>
+                  <Item path="public_html/export_per_sap/jsp/lancio_batch_ex_sap_cl.jsp"/>
+                  <Item path="public_html/export_per_sap/jsp/lancio_batch_imp_sap_2_cl.jsp"/>
+                  <Item path="public_html/export_per_sap/jsp/lancio_batch_imp_sap_cl.jsp"/>
+                  <Item path="public_html/export_per_sap/jsp/lancio_sp_accorp_ex_sap_2_cl.jsp"/>
+                  <Item path="public_html/export_per_sap/jsp/lancio_sp_accorp_ex_sap_3_cl.jsp"/>
+                  <Item path="public_html/export_per_sap/jsp/lancio_sp_accorp_ex_sap_cl.jsp"/>
+                  <Item path="public_html/export_per_sap/jsp/verifica_batch_ex_sap_cl.jsp"/>
+                  <Item path="public_html/export_per_sap/jsp/verifica_batch_imp_sap_cl.jsp"/>
+                  <Item path="public_html/export_per_sap/jsp/verifica_sp_accorp_ex_sap_cl.jsp"/>
+                  <Item path="public_html/fasce/jsp/cbn1_dis_fascia_cl.jsp"/>
+                  <Item path="public_html/fasce/jsp/cbn1_ins_fascia_cl.jsp"/>
+                  <Item path="public_html/fasce/jsp/cbn1_lista_fascia_cl.jsp"/>
+                  <Item path="public_html/fasce/jsp/cbn_1_agg_fascia_cl.jsp"/>
+                  <Item path="public_html/fasce/jsp/messaggio.jsp"/>
+                  <Item path="public_html/fasce/jsp/stampa_fascia_cl.jsp"/>
+                  <Item path="public_html/generatore_eventi/js/generatoreEventi.js"/>
+                  <Item path="public_html/generatore_eventi/jsp/crea_evento.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/crea_ripristino.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/istanza_dettaglio_anagrafico_1.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/istanza_dettaglio_anagrafico_2.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/istanza_dettaglio_anagrafico_3.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/istanza_dettaglio_anagrafico_4.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/istanza_dettaglio_anagrafico_5.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/istanza_dettaglio_anagrafico_6.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/istanza_dettaglio_componente.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/istanza_dettaglio_prest_agg.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/istanza_dettaglio_prodotto.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/ripristina_inventario.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/seleziona_account.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/seleziona_causale.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/seleziona_componente.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/seleziona_data.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/seleziona_inventario.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/seleziona_offerta.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/seleziona_prestazione_aggiuntiva.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/seleziona_prodotto.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/seleziona_servizio.jsp"/>
+                  <Item path="public_html/generatore_eventi/jsp/vis_storico_code_istanza_prod.jsp"/>
+                  <Item path="public_html/gest_catalogo/js/Albero.js"/>
+                  <Item path="public_html/gest_catalogo/js/Skill.js"/>
+                  <Item path="public_html/gest_catalogo/js/css.js"/>
+                  <Item path="public_html/gest_catalogo/js/gest_catalogo.js"/>
+                  <Item path="public_html/gest_catalogo/js/off_serv.js"/>
+                  <Item path="public_html/gest_catalogo/js/tree.js"/>
+                  <Item path="public_html/gest_catalogo/js/window.js"/>
+                  <Item path="public_html/gest_catalogo/jsp/ComponentiDettaglio.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/DettaglioCatalogo.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/GeneraXml.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/NavigatoreAggiungi.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/NavigatoreCatalogo.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/OfferteDettaglio.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/PaginaVuota.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/PrestazioniDettaglio.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/ProdottiDettaglio.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/ServiziDettaglio.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/aggiungi_elemento.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/parametri_aggiungi.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_AssOffServ.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_AssOffServIns.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_accorpamenti.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_account.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_accountVis.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_caratteristiche.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_caratteristicheVis.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_clasOff.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_clasOffVis.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_componenti.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_componentiVis.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_gestori.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_gestoriVis.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_offerte.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_offerteVis.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_prestazioni.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_prestazioniVis.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_prodotto.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_prodottoVis.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_servizi.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_serviziVis.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_tipoCaus.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/pre_inserimento_tipoCausVis.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/seleziona_aggiungi.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/tree.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/tree_aggiungi.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/visualizza_catalogo.jsp"/>
+                  <Item path="public_html/gest_catalogo/jsp/visualizzazione.jsp"/>
+                  <Item path="public_html/gest_catalogo/xml_xsl/tree.xsl"/>
+                  <Item path="public_html/gest_catalogo/xml_xsl/tree_aggiungi.xsl"/>
+                  <Item path="public_html/gestori/jsp/agg_gestore.jsp"/>
+                  <Item path="public_html/gestori/jsp/allineamento_db.jsp"/>
+                  <Item path="public_html/gestori/jsp/associa_gestore.jsp"/>
+                  <Item path="public_html/gestori/jsp/flag_lancio.jsp"/>
+                  <Item path="public_html/gestori/jsp/inserisci_codice_gestore.jsp"/>
+                  <Item path="public_html/gestori/jsp/inserisci_gestore.jsp"/>
+                  <Item path="public_html/gestori/jsp/lancio_batch_allineamento.jsp"/>
+                  <Item path="public_html/gestori/jsp/lista_gestori.jsp"/>
+                  <Item path="public_html/gestori/jsp/messaggio.jsp"/>
+                  <Item path="public_html/gestori/jsp/messaggio_p.jsp"/>
+                  <Item path="public_html/gestori/jsp/salva_gestore.jsp"/>
+                  <Item path="public_html/gestori/jsp/stampa_gestori.jsp"/>
+                  <Item path="public_html/gestori/jsp/visualizza_errore.jsp"/>
+                  <Item path="public_html/gruppi_tariffe/jsp/crea_gruppo.jsp"/>
+                  <Item path="public_html/gruppi_tariffe/jsp/seleziona_gruppo.jsp"/>
+                  <Item path="public_html/gruppi_tariffe/jsp/visualizza_account.jsp"/>
+                  <Item path="public_html/gruppi_tariffe/jsp/visualizza_gruppi.jsp"/>
+                  <Item path="public_html/gruppi_tariffe/jsp/visualizza_relazioni.jsp"/>
+                  <Item path="public_html/listino/jsp/TariffaListinoSp.jsp"/>
+                  <Item path="public_html/listino/jsp/VisualListinoSp.jsp"/>
+                  <Item path="public_html/listino_tariffario/jsp/cbn1_vis_listino_2_cl.jsp"/>
+                  <Item path="public_html/listino_tariffario/jsp/cbn1_vis_listino_3_cl.jsp"/>
+                  <Item path="public_html/listino_tariffario/jsp/cbn1_vis_listino_cl.jsp"/>
+                  <Item path="public_html/login/html/home.html"/>
+                  <Item path="public_html/login/html/index.html"/>
+                  <Item path="public_html/login/html/index_scadpwd.html"/>
+                  <Item path="public_html/login/html/loginFailed.html"/>
+                  <Item path="public_html/login/html/main.html"/>
+                  <Item path="public_html/login/html/main_scadpwd.html"/>
+                  <Item path="public_html/login/html/userDisabled.html"/>
+                  <Item path="public_html/login/html/userLoginDisabled.html"/>
+                  <Item path="public_html/login/jsp/userNoprofile.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/cbn1_canc_mnr_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/cbn1_ins_mnr_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/cbn1_lista_mnr_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/cbn1_vis_mnr_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/elimina_mov_non_ric_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/funControlloData.js"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/ins_account_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/ins_classe_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/ins_fornitore_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/ins_oggetto_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/lista_account_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/lista_classi_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/lista_fornitori_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/lista_oggetti_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/messaggio.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/salva_mov_non_ric_cl.jsp"/>
+                  <Item path="public_html/mov_non_ricorrenti/jsp/stampa_mov_non_ric_cl.jsp"/>
+                  <Item path="public_html/nota_credito/jsp/CongelaNCSp.jsp"/>
+                  <Item path="public_html/nota_credito/jsp/LancioAccountSp.jsp"/>
+                  <Item path="public_html/nota_credito/jsp/LancioBatchNCSp.jsp"/>
+                  <Item path="public_html/nota_credito/jsp/LancioNCSp.jsp"/>
+                  <Item path="public_html/nota_credito/jsp/NCAccountSp.jsp"/>
+                  <Item path="public_html/nota_credito/jsp/NCLstAccElabSp.jsp"/>
+                  <Item path="public_html/nota_credito/jsp/VerificaNCAbortSp.jsp"/>
+                  <Item path="public_html/nota_credito/jsp/VerificaNCSp.jsp"/>
+                  <Item path="public_html/note_di_credito/jsp/cbn1_lancio_ndc_2_cl.jsp"/>
+                  <Item path="public_html/note_di_credito/jsp/cbn1_lancio_ndc_cl.jsp"/>
+                  <Item path="public_html/note_di_credito/jsp/cbn1_ver_ndc_2_cl.jsp"/>
+                  <Item path="public_html/note_di_credito/jsp/cbn1_ver_ndc_3_cl.jsp"/>
+                  <Item path="public_html/note_di_credito/jsp/cbn_dg_002_cl.jsp"/>
+                  <Item path="public_html/note_di_credito/jsp/cbn_dg_003_cl.jsp"/>
+                  <Item path="public_html/oggetti_fatturazione/jsp/ListaOf.jsp"/>
+                  <Item path="public_html/oggetti_fatturazione/jsp/OggettoFatt.jsp"/>
+                  <Item path="public_html/proc_emittenti/jsp/canc_proc_emitt_cl.jsp"/>
+                  <Item path="public_html/proc_emittenti/jsp/cbn4_ins_proc_emitt_cl.jsp"/>
+                  <Item path="public_html/proc_emittenti/jsp/cbn4_lista_proc_emitt_cl.jsp"/>
+                  <Item path="public_html/proc_emittenti/jsp/messaggio.jsp"/>
+                  <Item path="public_html/proc_emittenti/jsp/salva_proc_emitt_cl.jsp"/>
+                  <Item path="public_html/proc_emittenti/jsp/stampa_proc_emitt_cl.jsp"/>
+                  <Item path="public_html/provisioning/jsp/lancio_batch_acq_dati_provs.jsp"/>
+                  <Item path="public_html/provisioning/jsp/lancio_batch_acq_dati_provs_2.jsp"/>
+                  <Item path="public_html/provisioning/jsp/verifica_batch_acq_dati_provs.jsp"/>
+                  <Item path="public_html/report/jsp/LancioBatchSp.jsp"/>
+                  <Item path="public_html/report/jsp/ReportSp.jsp"/>
+                  <Item path="public_html/repricing/jsp/repricingCongelaTariffe.jsp"/>
+                  <Item path="public_html/repricing/jsp/repricingCongelamentoAjax.jsp"/>
+                  <Item path="public_html/repricing/jsp/repricingSpecial.jsp"/>
+                  <Item path="public_html/repricing/jsp/repricingSpecialAjax.jsp"/>
+                  <Item path="public_html/repricing/jsp/tariffeSpecial.jsp"/>
+                  <Item path="public_html/resoconto_sap/jsp/resocontoSap.jsp"/>
+                  <Item path="public_html/resoconto_sap/jsp/resocontoSap2.jsp"/>
+                  <Item path="public_html/ribaltamento_listino/jsp/EliminaTariffeSp.jsp"/>
+                  <Item path="public_html/ribaltamento_listino/jsp/RibListinoSp.jsp"/>
+                  <Item path="public_html/ribaltamento_tariffe/jsp/PP_chk_riba_tariffe_cl.jsp"/>
+                  <Item path="public_html/ribaltamento_tariffe/jsp/cbn1_dett_rib_2_cl.jsp"/>
+                  <Item path="public_html/ribaltamento_tariffe/jsp/cbn1_dett_rib_cl.jsp"/>
+                  <Item path="public_html/ribaltamento_tariffe/jsp/cbn1_pt_rib_cl.jsp"/>
+                  <Item path="public_html/rival_istat/jsp/cbn1_canc_rival_istat_sp.jsp"/>
+                  <Item path="public_html/rival_istat/jsp/cbn1_ins_rival_istat_sp.jsp"/>
+                  <Item path="public_html/rival_istat/jsp/contr_anno_canc_istat_sp.jsp"/>
+                  <Item path="public_html/rival_istat/jsp/contr_anno_rival_istat_sp.jsp"/>
+                  <Item path="public_html/rival_istat/jsp/lista_rival_istat_sp.jsp"/>
+                  <Item path="public_html/rival_istat/jsp/messaggio.jsp"/>
+                  <Item path="public_html/rival_istat/jsp/salva_rival_istat_sp.jsp"/>
+                  <Item path="public_html/rival_istat/jsp/stampa_istat_sp.jsp"/>
+                  <Item path="public_html/sap_servizi/jsp/lancio_batch_ex_sap_2_sp.jsp"/>
+                  <Item path="public_html/sap_servizi/jsp/lancio_batch_ex_sap_sp.jsp"/>
+                  <Item path="public_html/scarti/jsp/elencaOloConScarti.jsp"/>
+                  <Item path="public_html/scarti/jsp/scartiPerContrViewer.jsp"/>
+                  <Item path="public_html/schedulazione/jsp/agg_sched.jsp"/>
+                  <Item path="public_html/schedulazione/jsp/salva_sched.jsp"/>
+                  <Item path="public_html/schedulazione/jsp/verifica_schedulazioni.jsp"/>
+                  <Item path="public_html/sconti/jsp/cbn14_lst_sconti_area_2_cl.jsp"/>
+                  <Item path="public_html/sconti/jsp/cbn4_agg_sconto_cl.jsp"/>
+                  <Item path="public_html/sconti/jsp/cbn4_lista_sconti_cl.jsp"/>
+                  <Item path="public_html/sconti/jsp/messaggio.jsp"/>
+                  <Item path="public_html/sconti/jsp/salva_sconto_cl.jsp"/>
+                  <Item path="public_html/sconti/jsp/stampa_sconti.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/cbn4_acquis_imp_spesa_tld_2_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/cbn4_acquis_imp_spesa_tld_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/cbn4_cal_par_sc_2_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/cbn4_cal_par_sc_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/cbn4_dial_clienti_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/cbn4_lancio_cal_sp_compl_2_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/cbn4_lancio_cal_sp_compl_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/cbn4_ver_cal_sp_compl_2_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/cbn4_ver_cal_sp_compl_3_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/cbn4_ver_cal_sp_compl_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/cbn4_vis_sca_cal_sp_comp_2_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/cbn4_vis_sca_cal_sp_comp_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/lancio_tld_2_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/lancio_tld_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/verifica_tld_cl.jsp"/>
+                  <Item path="public_html/spesa_complessiva/jsp/visualizza_scarti_tld_cl.jsp"/>
+                  <Item path="public_html/stati_elab/jsp/ElencoAccountPsSp.jsp"/>
+                  <Item path="public_html/stati_elab/jsp/StatiElabBatchSp.jsp"/>
+                  <Item path="public_html/stato_avanzamento_costi/jsp/cbn1_lancio_sar_cl.jsp"/>
+                  <Item path="public_html/stato_avanzamento_costi/jsp/cbn1_ver_ava_ric_cl.jsp"/>
+                  <Item path="public_html/stato_avanzamento_costi/jsp/cbn1_ver_sar_lista_account_cl.jsp"/>
+                  <Item path="public_html/stato_avanzamento_costi/jsp/flag_lancio.jsp"/>
+                  <Item path="public_html/stato_avanzamento_costi/jsp/messaggio.jsp"/>
+                  <Item path="public_html/stato_avanzamento_costi/jsp/salva_lancio_sar_cl.jsp"/>
+                  <Item path="public_html/stato_avanzamento_costi/jsp/salva_verifica_sar_cl.jsp"/>
+                  <Item path="public_html/stato_avanzamento_costi/jsp/verifica_congelamento_sar_cl.jsp"/>
+                  <Item path="public_html/stato_avanzamento_costi/jsp/verifica_lancio_sar_cl.jsp"/>
+                  <Item path="public_html/stor_ndc_fatt/jsp/lancio_stor_ndc_fatt_2_cl.jsp"/>
+                  <Item path="public_html/stor_ndc_fatt/jsp/lancio_stor_ndc_fatt_cl.jsp"/>
+                  <Item path="public_html/stor_ndc_fatt/jsp/ver_stor_ndc_fatt_cl.jsp"/>
+                  <Item path="public_html/tariffe/js/ListaTariffeSp.js"/>
+                  <Item path="public_html/tariffe/js/TariffaSp.js"/>
+                  <Item path="public_html/tariffe/js/Tariffe.js"/>
+                  <Item path="public_html/tariffe/jsp/DettaglioTariffaSp.jsp"/>
+                  <Item path="public_html/tariffe/jsp/ElabTariffaSp.jsp"/>
+                  <Item path="public_html/tariffe/jsp/ListaTariffeSp.jsp"/>
+                  <Item path="public_html/tariffe/jsp/ProdServSp.jsp"/>
+                  <Item path="public_html/tariffe/jsp/SwitchInserimentoXTipologia_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/SwitchModificaXTipologia_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/TariffaSp.jsp"/>
+                  <Item path="public_html/tariffe/jsp/TariffaWfSp.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_canc_tar_X_tipol_contr_2_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_canc_tar_X_tipol_contr_3_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_canc_tar_X_tipol_contr_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_controller_tariffe.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_helpRegola.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_circ_parziali_2_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_circ_parziali_3_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_circ_parziali_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_contr_acquisti_2_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_contr_acquisti_3_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_contr_acquisti_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_contr_cdn_2_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_contr_cdn_3_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_contr_cdn_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_contr_cvp_2_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_contr_cvp_3_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_contr_cvp_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_contr_itc_2_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_contr_itc_3_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_ins_tar_x_tipol_contr_itc_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_inserimento_tariffe_2_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_lista_tariffe_2_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_lista_tariffe_3_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_lista_tariffe_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_lista_tariffe_componenti.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_lista_tariffe_prest_agg.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_lista_tariffe_prodotto.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_modifica_tariffe_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_select_Tariffa_Rif.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_servizio_prodotto_sel.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_storico_tariffa.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_switch_ins_upd_cl.jsp"/>
+                  <Item path="public_html/tariffe/jsp/cbn1_tariffa_aggiungi_modifica.jsp"/>
+                  <Item path="public_html/tariffe_x_contr/jsp/DettaglioTariffaXContrSp.jsp"/>
+                  <Item path="public_html/tariffe_x_contr/jsp/ElabTariffaXContrSp.jsp"/>
+                  <Item path="public_html/tariffe_x_contr/jsp/ListaTariffeXContrSp.jsp"/>
+                  <Item path="public_html/tariffe_x_contr/jsp/ProdServXContrSp.jsp"/>
+                  <Item path="public_html/tariffe_x_contr/jsp/TariffaXContrSp.jsp"/>
+                  <Item path="public_html/tariffe_x_contr/jsp/TariffaXContrWfSp.jsp"/>
+                  <Item path="public_html/upload/jsp/acquisizione.jsp"/>
+                  <Item path="public_html/upload/jsp/sel_upload.jsp"/>
+                  <Item path="public_html/upload/jsp/upload.jsp"/>
+                  <Item path="public_html/upload/jsp/upload_done.jsp"/>
+                  <Item path="public_html/utenti/jsp/agg_profilo.jsp"/>
+                  <Item path="public_html/utenti/jsp/agg_utente.jsp"/>
+                  <Item path="public_html/utenti/jsp/controlla_utente.jsp"/>
+                  <Item path="public_html/utenti/jsp/gestione_pwd.jsp"/>
+                  <Item path="public_html/utenti/jsp/lista_profili.jsp"/>
+                  <Item path="public_html/utenti/jsp/lista_utenti.jsp"/>
+                  <Item path="public_html/utenti/jsp/messaggio.jsp"/>
+                  <Item path="public_html/utenti/jsp/salva_profilo.jsp"/>
+                  <Item path="public_html/utenti/jsp/salva_pwd.jsp"/>
+                  <Item path="public_html/utenti/jsp/salva_utente.jsp"/>
+                  <Item path="public_html/utenti/jsp/stampa_profili.jsp"/>
+                  <Item path="public_html/utenti/jsp/stampa_utenti.jsp"/>
+                  <Item path="public_html/valorizza_attiva/js/LancioValAttivaSp.js"/>
+                  <Item path="public_html/valorizza_attiva/jsp/AccNoteCredSp.jsp"/>
+                  <Item path="public_html/valorizza_attiva/jsp/AccountSp.jsp"/>
+                  <Item path="public_html/valorizza_attiva/jsp/LancioValAttiva2Sp.jsp"/>
+                  <Item path="public_html/valorizza_attiva/jsp/LancioValAttivaSp.jsp"/>
+                  <Item path="public_html/valorizza_attiva/jsp/LancioValAttivaWfSp.jsp"/>
+                  <Item path="public_html/valorizza_attiva/jsp/ScartiSp.jsp"/>
+                  <Item path="public_html/valorizza_attiva/jsp/VALstAccElab2Sp.jsp"/>
+                  <Item path="public_html/valorizza_attiva/jsp/VALstAccElabSp.jsp"/>
+                  <Item path="public_html/valorizza_attiva/jsp/VerificaVAAbortSp.jsp"/>
+                  <Item path="public_html/valorizza_attiva/jsp/VerificaVASp.jsp"/>
+                  <Item path="public_html/valorizza_attiva/jsp/VisualAccountSp.jsp"/>
+                  <Item path="public_html/valorizzazione_attiva/jsp/cbn1_lancio_val_attiva_2_cl.jsp"/>
+                  <Item path="public_html/valorizzazione_attiva/jsp/cbn1_lancio_val_attiva_cl.jsp"/>
+                  <Item path="public_html/valorizzazione_attiva/jsp/cbn1_ver_val_attiva_2_cl.jsp"/>
+                  <Item path="public_html/valorizzazione_attiva/jsp/cbn1_ver_val_attiva_3_cl.jsp"/>
+                  <Item path="public_html/valorizzazione_attiva/jsp/cbn1_ver_val_attiva_cl.jsp"/>
+                  <Item path="public_html/valorizzazione_attiva/jsp/cbn_dg_lancio_val_attiva_1_cl.jsp"/>
+                  <Item path="public_html/valorizzazione_attiva/jsp/msg_cbn1_ver_val_attiva_2_cl.jsp"/>
+                  <Item path="src/META-INF/Tar.tld"/>
+                  <Item path="src/META-INF/logtag.tld"/>
+                  <Item path="src/META-INF/pg.tld"/>
+                  <Item path="src/META-INF/sec.tld"/>
+                  <Item path="src/com/applet/CryptoApplet.java"/>
+                  <Item path="src/com/applet/Tree.java"/>
+                  <Item path="src/com/cj/log/LogBean.java"/>
+                  <Item path="src/com/cj/log/logData.java"/>
+                  <Item path="src/com/cj/log/setLogFile.java"/>
+                  <Item path="src/com/cj/log/setLogState.java"/>
+                  <Item path="src/com/filter/ChkAutServlet.java"/>
+                  <Item path="src/com/servlet/AssOfPsCntl.java"/>
+                  <Item path="src/com/servlet/AssOfPsXContrCntl.java"/>
+                  <Item path="src/com/servlet/ColocationCNTL.java"/>
+                  <Item path="src/com/servlet/Controller.java"/>
+                  <Item path="src/com/servlet/GestAssOfPsCntl.java"/>
+                  <Item path="src/com/servlet/GestAssOfPsXContrCntl.java"/>
+                  <Item path="src/com/servlet/LancioValAttivaCntl.java"/>
+                  <Item path="src/com/servlet/Logout.java"/>
+                  <Item path="src/com/servlet/SendMail.java"/>
+                  <Item path="src/com/servlet/loadTree.java"/>
+                  <Item path="src/com/taglib/TableTariffe.java"/>
+                  <Item path="src/com/taglib/pag/index.java"/>
+                  <Item path="src/com/taglib/pag/indexSupport.java"/>
+                  <Item path="src/com/taglib/pag/indexTagTEI.java"/>
+                  <Item path="src/com/taglib/pag/next.java"/>
+                  <Item path="src/com/taglib/pag/pager.java"/>
+                  <Item path="src/com/taglib/pag/pagerSupport.java"/>
+                  <Item path="src/com/taglib/pag/pagerTagTEI.java"/>
+                  <Item path="src/com/taglib/pag/pages.java"/>
+                  <Item path="src/com/taglib/pag/param.java"/>
+                  <Item path="src/com/taglib/pag/prev.java"/>
+                  <Item path="src/com/taglib/sec/ChkUserAuth.java"/>
+                  <Item path="src/com/taglib/sec/ChkUserAuthTagTEI.java"/>
+                  <Item path="src/com/taglib/sec/ShowButtons.java"/>
+                  <Item path="src/com/usr/clsInfoUser.java"/>
+                  <Item path="src/com/utl/AbstractClassicEJB.java"/>
+                  <Item path="src/com/utl/AbstractDataBean.java"/>
+                  <Item path="src/com/utl/AbstractDataSource.java"/>
+                  <Item path="src/com/utl/AbstractEJB.java"/>
+                  <Item path="src/com/utl/AbstractEJBTypes.java"/>
+                  <Item path="src/com/utl/AbstractEntityCommonBean.java"/>
+                  <Item path="src/com/utl/AbstractPK.java"/>
+                  <Item path="src/com/utl/AbstractSequenceBean.java"/>
+                  <Item path="src/com/utl/AbstractSessionCommonBean.java"/>
+                  <Item path="src/com/utl/ClassClient_ip.java"/>
+                  <Item path="src/com/utl/ClassDatiTop.java"/>
+                  <Item path="src/com/utl/ClassJRibesReturn.java"/>
+                  <Item path="src/com/utl/ClassSchedBatchElem.java"/>
+                  <Item path="src/com/utl/ClassTariffeElem.java"/>
+                  <Item path="src/com/utl/CreateSequenceException.java"/>
+                  <Item path="src/com/utl/CustomDecode.java"/>
+                  <Item path="src/com/utl/CustomEJBException.java"/>
+                  <Item path="src/com/utl/CustomEncode.java"/>
+                  <Item path="src/com/utl/CustomException.java"/>
+                  <Item path="src/com/utl/CustomNumberFormat.java"/>
+                  <Item path="src/com/utl/DecodingException.java"/>
+                  <Item path="src/com/utl/SendError.java"/>
+                  <Item path="src/com/utl/Sequence.java"/>
+                  <Item path="src/com/utl/clsApplication.java"/>
+               </files>
+               <selectionFilters/>
+            </contributors>
+            <displayName/>
+            <filters>
+               <additionalArchives/>
+               <afterFilters/>
+               <beforeFilters/>
+               <duringFilters/>
+               <selectedArchives>
+                  <archives>
+                     <Item path="src/jcommon-0.9.5.jar" jar-entry=""/>
+                     <Item path="src/jfreechart-0.9.20.jar" jar-entry=""/>
+                     <Item path="src/chart.jar" jar-entry=""/>
+                     <Item path="src/cos.jar" jar-entry=""/>
+                     <Item path="src/cos.jar" jar-entry=""/>
+                     <Item path="src/jdom.jar" jar-entry=""/>
+                     <Item path="src/jxl.jar" jar-entry=""/>
+                     <Item path="src/jsch-0.1.40.jar" jar-entry=""/>
+                     <Item path="src/gson-1.6.jar" jar-entry=""/>
+                     <Item path="src/log4j-1.2.17.jar" jar-entry=""/>
+                     <Item path="src/apache-log4j-extras-1.2.17.jar" jar-entry=""/>
+                  </archives>
+                  <selectionMode>0</selectionMode>
+               </selectedArchives>
+            </filters>
+            <targetWithinJar/>
+         </Item>
+         <Item class="oracle.jdeveloper.deploy.common.PackagingFileGroup" internalName="legacy-project-deps">
+            <contributors>
+               <Item type="7"/>
+            </contributors>
+            <displayName>Project Dependencies</displayName>
+            <filters>
+               <rules>
+                  <Item type="1" pattern="connections.xml"/>
+                  <Item type="1" pattern="**/CVS/"/>
+                  <Item type="1" pattern="**.cdi"/>
+                  <Item type="1" pattern="**.contrib"/>
+                  <Item type="1" pattern="**.keep"/>
+                  <Item type="1" pattern="**.rvi"/>
+                  <Item type="1" pattern=".jsps/"/>
+                  <Item type="0" pattern="**"/>
+               </rules>
+            </filters>
+            <targetWithinJar/>
+         </Item>
+      </groups>
+   </fileGroups>
+   <jarURL path="ejb.jar"/>
+   <profileDeps/>
+   <properties/>
+</ejb-deployment>

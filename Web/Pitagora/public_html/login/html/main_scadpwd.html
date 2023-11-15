@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+  <TITLE>Information Services</TITLE>
+  <META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+  <LINK REL="stylesheet" HREF="../../css/Style.css" TYPE="text/css">
+
+  <script language="javascript">
+	var gTimer=null;
+	var gTimerCount=10;
+	function Timer()
+	{
+		if (gTimerCount!=0)
+		{
+			gTimerCount--;
+			gTimer=window.setTimeout("Timer()",1000);
+
+			if (document.layers)
+			{
+				counter = document['Counter0'].document['DCounter0'];
+				counter.document.open();
+				counter.document.write('<center><font color="white" FAMILY="Verdana" SIZE="2pt"><b>Sarete rediretti alla pagina di login tra '+gTimerCount+' secondi<b></font></center>');
+				counter.document.close();
+			}
+			if (document.all)
+			{
+				counter = document.all['DCounter0'];
+				counter.innerHTML='Sarete rediretti alla pagina di cambio password tra '+gTimerCount+' secondi';
+			}
+		}
+		else
+		{
+			gTimer=null;
+			ONRICONNETTI();
+		}
+	}
+
+
+	function ONRICONNETTI()
+	{
+		location="../../utenti/jsp/gestione_pwd.jsp?ChkScadPwd=Y";
+	}
+  </script>
+
+</HEAD>
+<BODY bgColor="#ffffff" text="#000000" ONLOAD="Timer();">
+<script>
+if (document.layers)
+{
+	document.write('<STYLE>');
+		document.write('#Counter0');
+		document.write("{");
+			document.write('position: relative;');
+			document.write('left:0px;');
+			document.write('top: 0px;');
+		document.write('}');
+		document.write('#DCounter0');
+		document.write('{');
+			document.write('position: absolute;');
+			document.write('left:0px;');
+			document.write('top: 0px;');
+		document.write('}');
+	document.write('</STYLE>');
+}
+if (document.all)
+{
+	document.write("<SPAN ID='Counter0' ALIGN='CENTER'");
+		document.write('STYLE="');
+			document.write('position:relative;');
+		document.write("<DIV ID='DCounter0' ALIGN='center'");
+			document.write("STYLE='");
+				document.write("position:absolute;");
+				document.write("left:0px;");
+				document.write("top: 0px;");
+				document.write("width:100%;");
+				document.write("eight:100%;'>");
+		document.write('</DIV>');
+	document.write('</SPAN>');
+}
+
+</script>
+
+
+
+<BR><!-- nuovo layout inizio -->
+<form NAME="Main">
+<TABLE border="0" cellPadding="0" cellSpacing="0" width="100%">
+  <TR>
+    <td valign="top"><img src="../../common/images/body/pixel.gif" width="6" height="10"></td>
+    <TD>
+      <TABLE border="0" cellPadding="0" cellSpacing="0" width="500">
+        <TR>
+          <TD vAlign="top" width="80"><IMG border="0" height="35" src="../../common/images/body/info.gif" width="80"></TD>
+          <td width="420" valign="top"><img src="../../common/images/body/pixel.gif" width="420" height="35"></td>
+        <TR>
+      </TABLE>
+      <TABLE bgColor="#ffffff" border="0" cellPadding="1" cellSpacing="0" width="502">
+        <TR>
+          <TD bgColor="#ffffff"><IMG height="3" src="pixel.gif" width="1"></TD>
+        </TR>
+      </TABLE>
+      <TABLE bgColor="#006699" border="0" cellPadding="1" cellSpacing="0" width="502">
+        <TR>
+          <TD>
+            <TABLE bgColor="#006699" border="0" cellPadding="0" cellSpacing="0" width="502">
+              <TR>
+                <TD bgColor="#006699" class="white" vAlign="top" width="88%">&nbsp;
+                Sessione di lavoro non valida</TD>
+                <TD align="middle" bgColor="#ffffff" class="white" width="12%"><IMG height="11" src="../../common/images/body/tre.gif" width="28"></TD>
+              </TR>
+            </TABLE>
+          </TD>
+        </TR>
+      </TABLE>
+      <TABLE bgColor="#ebf2ff" border="0" cellPadding="0" cellSpacing="0" width="500">
+        <TR>
+          <TD>&nbsp; </TD>
+          <TD>
+            <TABLE bgColor="#006699" border="0" cellPadding="0" cellSpacing="0" width="100%">
+              <!-- inizio tabella sfondo scuro -->
+              <TR>
+                <TD class='white' align='center'>Attenzione!</TD>
+              </TR>
+              <TR>
+                <TD class='white' align='center'>&nbsp;La vostra paswword è scaduta. Si prega di aggiornarla.</TD>
+              </TR>
+              <TR>
+                <TD>&nbsp;</TD>
+              </TR>
+              <TR>
+                <TD class='white' align='center'>&nbsp;
+
+					<SPAN ID="Counter0">
+						<DIV ID="DCounter0">Sarete rediretti alla pagina di modifca password tra 10 secondi
+						</DIV>
+					</SPAN>
+
+                </TD>
+              </TR>
+            </TABLE>
+          </TD>
+          <TD>&nbsp;</TD>
+          <TD>&nbsp;</TD>
+          <TD><IMG align="right" src="../../common/images/body/log3.gif"></TD>
+        </TR>
+        <TR>
+          <TD COLSPAN="5">&nbsp; </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+</TABLE>
+</form>
+</BODY>
+</HTML>

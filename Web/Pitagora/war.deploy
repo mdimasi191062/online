@@ -1,0 +1,370 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<web-app-deployment nselem="web-app-deployment" class="oracle.jdeveloper.deploy.war.WarProfile" xmlns="http://xmlns.oracle.com/jdeveloper/101303/deploy/j2ee-war">
+   <appletArchiveName class="java.lang.String"/>
+   <appletArchives>
+      <archives class="[Ljava.net.URL;"/>
+      <selectionMode>0</selectionMode>
+   </appletArchives>
+   <appletDeployedAsArchive>false</appletDeployedAsArchive>
+   <appletDeployment>false</appletDeployment>
+   <appletFiles>
+      <autoInclude>false</autoInclude>
+      <deploySourceAs>0</deploySourceAs>
+      <files class="[Ljava.net.URL;"/>
+      <selectionFilters>
+         <Item>oracle.jdevimpl.deploy.common.JavaSelectionFilter</Item>
+      </selectionFilters>
+   </appletFiles>
+   <appletLocation class="java.lang.String"/>
+   <archiveOptions>
+      <additionalManifests/>
+      <compressed>false</compressed>
+      <hasManifest>false</hasManifest>
+      <mainClass/>
+   </archiveOptions>
+   <contextRoot/>
+   <defaultConnection>localhost</defaultConnection>
+   <deployClientMaxHeapSize/>
+   <earURL path="war.ear"/>
+   <enterpriseAppName>war</enterpriseAppName>
+   <fileGroups>
+      <groups>
+         <Item class="oracle.jdeveloper.deploy.common.PackagingFileGroup" internalName="web-files">
+            <contributors>
+               <Item type="5"/>
+            </contributors>
+            <displayName>HTML</displayName>
+            <filters>
+               <rules>
+                  <Item type="1" pattern="WEB-INF/vssver.scc"/>
+                  <Item type="1" pattern="WEB-INF/lib/vssver.scc"/>
+                  <Item type="1" pattern="valorizzazione_attiva/jsp/vssver.scc"/>
+                  <Item type="1" pattern="valorizzazione_attiva/images/vssver.scc"/>
+                  <Item type="1" pattern="valorizza_attiva/jsp/vssver.scc"/>
+                  <Item type="1" pattern="valorizza_attiva/js/vssver.scc"/>
+                  <Item type="1" pattern="valorizza_attiva/images/vssver.scc"/>
+                  <Item type="1" pattern="utenti/jsp/vssver.scc"/>
+                  <Item type="1" pattern="utenti/js/vssver.scc"/>
+                  <Item type="1" pattern="utenti/images/vssver.scc"/>
+                  <Item type="1" pattern="tariffe_x_contr/jsp/vssver.scc"/>
+                  <Item type="1" pattern="tariffe_x_contr/js/vssver.scc"/>
+                  <Item type="1" pattern="tariffe_x_contr/images/vssver.scc"/>
+                  <Item type="1" pattern="tariffe_sconti/jsp/vssver.scc"/>
+                  <Item type="1" pattern="tariffe/jsp/vssver.scc"/>
+                  <Item type="1" pattern="tariffe/js/vssver.scc"/>
+                  <Item type="1" pattern="tariffe/images/vssver.scc"/>
+                  <Item type="1" pattern="stor_ndc_fatt/jsp/vssver.scc"/>
+                  <Item type="1" pattern="stor_ndc_fatt/images/vssver.scc"/>
+                  <Item type="1" pattern="stato_avanzamento_costi/jsp/vssver.scc"/>
+                  <Item type="1" pattern="stato_avanzamento_costi/images/vssver.scc"/>
+                  <Item type="1" pattern="stati_elab/jsp/vssver.scc"/>
+                  <Item type="1" pattern="stati_elab/images/vssver.scc"/>
+                  <Item type="1" pattern="spesa_complessiva/jsp/vssver.scc"/>
+                  <Item type="1" pattern="spesa_complessiva/images/vssver.scc"/>
+                  <Item type="1" pattern="sconti/jsp/vssver.scc"/>
+                  <Item type="1" pattern="sconti/images/vssver.scc"/>
+                  <Item type="1" pattern="rival_istat/jsp/vssver.scc"/>
+                  <Item type="1" pattern="rival_istat/images/vssver.scc"/>
+                  <Item type="1" pattern="ribaltamento_tariffe/jsp/vssver.scc"/>
+                  <Item type="1" pattern="ribaltamento_tariffe/images/vssver.scc"/>
+                  <Item type="1" pattern="ribaltamento_listino/jsp/vssver.scc"/>
+                  <Item type="1" pattern="ribaltamento_listino/images/vssver.scc"/>
+                  <Item type="1" pattern="report/jsp/vssver.scc"/>
+                  <Item type="1" pattern="report/js/vssver.scc"/>
+                  <Item type="1" pattern="report/images/vssver.scc"/>
+                  <Item type="1" pattern="proc_emittenti/jsp/vssver.scc"/>
+                  <Item type="1" pattern="proc_emittenti/images/vssver.scc"/>
+                  <Item type="1" pattern="old script/vssver.scc"/>
+                  <Item type="1" pattern="oggetti_fatturazione/jsp/vssver.scc"/>
+                  <Item type="1" pattern="oggetti_fatturazione/js/vssver.scc"/>
+                  <Item type="1" pattern="oggetti_fatturazione/images/vssver.scc"/>
+                  <Item type="1" pattern="note_di_credito/jsp/vssver.scc"/>
+                  <Item type="1" pattern="note_di_credito/images/vssver.scc"/>
+                  <Item type="1" pattern="nota_credito/jsp/vssver.scc"/>
+                  <Item type="1" pattern="nota_credito/js/vssver.scc"/>
+                  <Item type="1" pattern="nota_credito/images/vssver.scc"/>
+                  <Item type="1" pattern="mov_non_ricorrenti/jsp/vssver.scc"/>
+                  <Item type="1" pattern="mov_non_ricorrenti/js/vssver.scc"/>
+                  <Item type="1" pattern="mov_non_ricorrenti/images/vssver.scc"/>
+                  <Item type="1" pattern="login/images/vssver.scc"/>
+                  <Item type="1" pattern="login/html/vssver.scc"/>
+                  <Item type="1" pattern="listino_tariffario/jsp/vssver.scc"/>
+                  <Item type="1" pattern="listino_tariffario/images/vssver.scc"/>
+                  <Item type="1" pattern="listino/jsp/vssver.scc"/>
+                  <Item type="1" pattern="listino/images/vssver.scc"/>
+                  <Item type="1" pattern="gestori/jsp/vssver.scc"/>
+                  <Item type="1" pattern="gestori/images/vssver.scc"/>
+                  <Item type="1" pattern="fasce/jsp/vssver.scc"/>
+                  <Item type="1" pattern="fasce/js/vssver.scc"/>
+                  <Item type="1" pattern="fasce/images/vssver.scc"/>
+                  <Item type="1" pattern="export_per_sap/jsp/vssver.scc"/>
+                  <Item type="1" pattern="export_per_sap/images/vssver.scc"/>
+                  <Item type="1" pattern="euribor/jsp/vssver.scc"/>
+                  <Item type="1" pattern="euribor/images/vssver.scc"/>
+                  <Item type="1" pattern="css/vssver.scc"/>
+                  <Item type="1" pattern="consuntivo_swn/jsp/vssver.scc"/>
+                  <Item type="1" pattern="consuntivo_swn/images/vssver.scc"/>
+                  <Item type="1" pattern="conguagli_cambi_tariffa/jsp/vssver.scc"/>
+                  <Item type="1" pattern="conguagli_cambi_tariffa/images/vssver.scc"/>
+                  <Item type="1" pattern="conf_stor_inventario/jsp/vssver.scc"/>
+                  <Item type="1" pattern="conf_stor_inventario/images/vssver.scc"/>
+                  <Item type="1" pattern="common/jsp/vssver.scc"/>
+                  <Item type="1" pattern="common/js/vssver.scc"/>
+                  <Item type="1" pattern="common/images/top/vssver.scc"/>
+                  <Item type="1" pattern="common/images/logo/vssver.scc"/>
+                  <Item type="1" pattern="common/images/left/vssver.scc"/>
+                  <Item type="1" pattern="common/images/body/vssver.scc"/>
+                  <Item type="1" pattern="common/images/applets/vssver.scc"/>
+                  <Item type="1" pattern="common/html/vssver.scc"/>
+                  <Item type="1" pattern="colocation/jsp/vssver.scc"/>
+                  <Item type="1" pattern="colocation/js/vssver.scc"/>
+                  <Item type="1" pattern="colocation/images/vssver.scc"/>
+                  <Item type="1" pattern="classic_common/jsp/vssver.scc"/>
+                  <Item type="1" pattern="classic_common/images/vssver.scc"/>
+                  <Item type="1" pattern="classi_sconto/jsp/vssver.scc"/>
+                  <Item type="1" pattern="classi_sconto/images/vssver.scc"/>
+                  <Item type="1" pattern="cicli_fatturazione/jsp/vssver.scc"/>
+                  <Item type="1" pattern="cicli_fatturazione/images/vssver.scc"/>
+                  <Item type="1" pattern="calcolo_penali_mensili/jsp/vssver.scc"/>
+                  <Item type="1" pattern="calcolo_penali_mensili/images/vssver.scc"/>
+                  <Item type="1" pattern="batch_prefatturazione/jsp/vssver.scc"/>
+                  <Item type="1" pattern="batch_prefatturazione/images/vssver.scc"/>
+                  <Item type="1" pattern="batch_automatismo/jsp/vssver.scc"/>
+                  <Item type="1" pattern="batch_automatismo/images/vssver.scc"/>
+                  <Item type="1" pattern="associazioni_ofps/jsp/vssver.scc"/>
+                  <Item type="1" pattern="associazioni_ofps/images/vssver.scc"/>
+                  <Item type="1" pattern="associazioni_of_ps_x_contr/jsp/vssver.scc"/>
+                  <Item type="1" pattern="associazioni_of_ps_x_contr/js/vssver.scc"/>
+                  <Item type="1" pattern="associazioni_of_ps_x_contr/images/vssver.scc"/>
+                  <Item type="1" pattern="associazioni_of_ps/jsp/vssver.scc"/>
+                  <Item type="1" pattern="associazioni_of_ps/js/vssver.scc"/>
+                  <Item type="1" pattern="associazioni_of_ps/images/vssver.scc"/>
+                  <Item type="1" pattern="associazione_pfo/jsp/vssver.scc"/>
+                  <Item type="1" pattern="associazione_pfo/images/vssver.scc"/>
+                  <Item type="1" pattern="anag_funz/jsp/vssver.scc"/>
+                  <Item type="1" pattern="anag_funz/images/vssver.scc"/>
+                  <Item type="1" pattern="**/CVS/"/>
+                  <Item type="1" pattern="**.contrib"/>
+                  <Item type="1" pattern="**.keep"/>
+                  <Item type="1" pattern="**.rvi"/>
+                  <Item type="0" pattern="**"/>
+               </rules>
+            </filters>
+            <targetWithinJar/>
+         </Item>
+         <Item class="oracle.jdeveloper.deploy.common.ProjectFileGroup" internalName="legacy">
+            <contributors>
+               <autoInclude>false</autoInclude>
+               <deploySourceAs>0</deploySourceAs>
+               <files>
+                  <Item path="src/META-INF/ejb-jar.xml"/>
+                  <Item path="src/META-INF/orion-ejb-jar.xml"/>
+                  <Item path="src/META-INF/pg2.tld"/>
+                  <Item path="src/META-INF/sec.tld"/>
+                  <Item path="src/com/cj/log/LogBean.java"/>
+                  <Item path="src/com/cj/log/LogConst.java"/>
+                  <Item path="src/com/cj/log/logData.java"/>
+                  <Item path="src/com/cj/log/setLogFile.java"/>
+                  <Item path="src/com/cj/log/setLogState.java"/>
+                  <Item path="src/com/ejbBMP/AbortLstBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/AssOfPsBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/AssOfPsVerEsistAperteBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/AssOfPsVerifEsistBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/AssOfPsXContrBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/CicloFatBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/ColocationBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/DoppioListinoBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/ElaborBatchBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/I5_1ACCOUNTPK.java"/>
+                  <Item path="src/com/ejbBMP/I5_1Tipo_ContrPK.java"/>
+                  <Item path="src/com/ejbBMP/I5_2CLAS_SCONTOPK.java"/>
+                  <Item path="src/com/ejbBMP/I5_2Elab_BatchPK.java"/>
+                  <Item path="src/com/ejbBMP/I5_2FASCIEPK.java"/>
+                  <Item path="src/com/ejbBMP/InsAssOfPsBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/PeriodoRifBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/ScartiBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/TariffaBMPPK.java"/>
+                  <Item path="src/com/ejbBMP/TariffaXContrBMPPK.java"/>
+                  <Item path="src/com/ejbSTL/I5_2CONFR_INVENT_ROW.java"/>
+                  <Item path="src/com/ejbSTL/I5_2PARAM_VALORIZ_CL_ROW.java"/>
+                  <Item path="src/com/ejbSTL/I5_2RECORD_SCARTATO_CL_ROW.java"/>
+                  <Item path="src/com/ejbSTL/I5_3GEST_TLC_ROW.java"/>
+                  <Item path="src/com/ejbSTL/I5_6ANAG_FUNZ_ROW.java"/>
+                  <Item path="src/com/ejbSTL/I5_6MEM_FUNZ_PROF_OP_EL_ROW.java"/>
+                  <Item path="src/com/ejbSTL/I5_6OP_ELEM_ROW.java"/>
+                  <Item path="src/com/ejbSTL/I5_6PROF_UTENTE_ROW.java"/>
+                  <Item path="src/com/ejbSTL/LISTA_VERIFICA_ACCOUNT_CPM_CL_ROW.java"/>
+                  <Item path="src/com/ejbSTL/Security.java"/>
+                  <Item path="src/com/ejbSTL/SecurityHome.java"/>
+                  <Item path="src/com/ejbSTL/impl/SecurityBean.java"/>
+                  <Item path="src/com/filter/ChkAutServlet.java"/>
+                  <Item path="src/com/filter/PerformanceFilter.java"/>
+                  <Item path="src/com/servlet/AssOfPsCntl.java"/>
+                  <Item path="src/com/servlet/AssOfPsXContrCntl.java"/>
+                  <Item path="src/com/servlet/ColocationCNTL.java"/>
+                  <Item path="src/com/servlet/Controller.java"/>
+                  <Item path="src/com/servlet/GestAssOfPsCntl.java"/>
+                  <Item path="src/com/servlet/GestAssOfPsXContrCntl.java"/>
+                  <Item path="src/com/servlet/LancioValAttivaCntl.java"/>
+                  <Item path="src/com/servlet/Lista_gestori.java"/>
+                  <Item path="src/com/servlet/Lista_gestori_fine.java"/>
+                  <Item path="src/com/servlet/ListinoCntl.java"/>
+                  <Item path="src/com/servlet/Logout.java"/>
+                  <Item path="src/com/servlet/OggFattCntl.java"/>
+                  <Item path="src/com/servlet/SendMail.java"/>
+                  <Item path="src/com/servlet/TariffaCntl.java"/>
+                  <Item path="src/com/servlet/TariffaXContrCntl.java"/>
+                  <Item path="src/com/servlet/UplFiles.java"/>
+                  <Item path="src/com/servlet/loadTree.java"/>
+                  <Item path="src/com/taglib/pag/index.java"/>
+                  <Item path="src/com/taglib/pag/indexSupport.java"/>
+                  <Item path="src/com/taglib/pag/indexTagTEI.java"/>
+                  <Item path="src/com/taglib/pag/next.java"/>
+                  <Item path="src/com/taglib/pag/pager.java"/>
+                  <Item path="src/com/taglib/pag/pagerSupport.java"/>
+                  <Item path="src/com/taglib/pag/pagerTagTEI.java"/>
+                  <Item path="src/com/taglib/pag/pages.java"/>
+                  <Item path="src/com/taglib/pag/param.java"/>
+                  <Item path="src/com/taglib/pag/prev.java"/>
+                  <Item path="src/com/taglib/sec/ChkUserAuth.java"/>
+                  <Item path="src/com/taglib/sec/ChkUserAuthTagTEI.java"/>
+                  <Item path="src/com/taglib/sec/ShowButtons.java"/>
+                  <Item path="src/com/usr/clsInfoUser.java"/>
+                  <Item path="src/com/utl/BatchElem.java"/>
+                  <Item path="src/com/utl/CanoneElem.java"/>
+                  <Item path="src/com/utl/CausaleElem.java"/>
+                  <Item path="src/com/utl/ClassFreqElem.java"/>
+                  <Item path="src/com/utl/ClassFunzElem.java"/>
+                  <Item path="src/com/utl/ClassModApplRateiElem.java"/>
+                  <Item path="src/com/utl/ClassStatiBatchElem.java"/>
+                  <Item path="src/com/utl/ClassStatiElabBatchElem.java"/>
+                  <Item path="src/com/utl/ClassTariffeElem.java"/>
+                  <Item path="src/com/utl/ClassUtentiElem.java"/>
+                  <Item path="src/com/utl/ClasseFattElem.java"/>
+                  <Item path="src/com/utl/ContrattoElem.java"/>
+                  <Item path="src/com/utl/ControlliElem.java"/>
+                  <Item path="src/com/utl/CustomDecode.java"/>
+                  <Item path="src/com/utl/CustomEncode.java"/>
+                  <Item path="src/com/utl/CustomException.java"/>
+                  <Item path="src/com/utl/CustomNumberFormat.java"/>
+                  <Item path="src/com/utl/DBMessage.java"/>
+                  <Item path="src/com/utl/DB_Account.java"/>
+                  <Item path="src/com/utl/DB_AnagFunz.java"/>
+                  <Item path="src/com/utl/DB_AnagraficaMessaggi.java"/>
+                  <Item path="src/com/utl/DB_Batch.java"/>
+                  <Item path="src/com/utl/DB_Batch_Pre.java"/>
+                  <Item path="src/com/utl/DB_ClassOggFatt.java"/>
+                  <Item path="src/com/utl/DB_ClasseSconto.java"/>
+                  <Item path="src/com/utl/DB_Clienti.java"/>
+                  <Item path="src/com/utl/DB_ClientiSpeCom.java"/>
+                  <Item path="src/com/utl/DB_Contratto.java"/>
+                  <Item path="src/com/utl/DB_ExportPerSap.java"/>
+                  <Item path="src/com/utl/DB_Fascia.java"/>
+                  <Item path="src/com/utl/DB_Fatture.java"/>
+                  <Item path="src/com/utl/DB_Frequenze.java"/>
+                  <Item path="src/com/utl/DB_Map.java"/>
+                  <Item path="src/com/utl/DB_OggettoFatturazione.java"/>
+                  <Item path="src/com/utl/DB_ParamClasseSconto.java"/>
+                  <Item path="src/com/utl/DB_PrestazioniAggiuntive.java"/>
+                  <Item path="src/com/utl/DB_ProdottiServizi.java"/>
+                  <Item path="src/com/utl/DB_Scarti.java"/>
+                  <Item path="src/com/utl/DB_Sconti.java"/>
+                  <Item path="src/com/utl/DB_SpesaComplessiva.java"/>
+                  <Item path="src/com/utl/DB_Tariffe.java"/>
+                  <Item path="src/com/utl/DB_TariffeSconti.java"/>
+                  <Item path="src/com/utl/DB_TipiContratto.java"/>
+                  <Item path="src/com/utl/DB_TipiOfferte.java"/>
+                  <Item path="src/com/utl/DB_TipoCausale.java"/>
+                  <Item path="src/com/utl/DB_UnitaMisura.java"/>
+                  <Item path="src/com/utl/DataFormat.java"/>
+                  <Item path="src/com/utl/DatiCliElem.java"/>
+                  <Item path="src/com/utl/DecodingException.java"/>
+                  <Item path="src/com/utl/Funzioni.java"/>
+                  <Item path="src/com/utl/I5_2ANAG_CICLI_FATRZ_ROW.java"/>
+                  <Item path="src/com/utl/I5_6anag_utenteROW.java"/>
+                  <Item path="src/com/utl/LstAccElabElem.java"/>
+                  <Item path="src/com/utl/Misc.java"/>
+                  <Item path="src/com/utl/OpzioniElem.java"/>
+                  <Item path="src/com/utl/SecurityInfoTransf.java"/>
+                  <Item path="src/com/utl/SendError.java"/>
+                  <Item path="src/com/utl/Sequence.java"/>
+                  <Item path="src/com/utl/SitoElem.java"/>
+                  <Item path="src/com/utl/StaticContext.java"/>
+                  <Item path="src/com/utl/StaticMessages.java"/>
+                  <Item path="src/com/utl/TariffeInsElem.java"/>
+                  <Item path="src/com/utl/UnTerReteElem.java"/>
+                  <Item path="src/com/utl/clsApplication.java"/>
+               </files>
+               <selectionFilters>
+                  <Item>oracle.jdevimpl.deploy.common.JavaSelectionFilter</Item>
+               </selectionFilters>
+            </contributors>
+            <displayName>WEB-INF/classes</displayName>
+            <filters>
+               <additionalArchives/>
+               <afterFilters/>
+               <beforeFilters/>
+               <duringFilters/>
+               <selectedArchives>
+                  <archives class="[Ljava.net.URL;"/>
+                  <selectionMode>0</selectionMode>
+               </selectedArchives>
+            </filters>
+            <targetWithinJar>WEB-INF/classes</targetWithinJar>
+         </Item>
+         <Item class="oracle.jdeveloper.deploy.common.PackagingFileGroup" internalName="legacy-project-deps">
+            <contributors>
+               <Item type="7"/>
+            </contributors>
+            <displayName>Project Dependencies</displayName>
+            <filters>
+               <rules>
+                  <Item type="1" pattern="connections.xml"/>
+                  <Item type="1" pattern="**/CVS/"/>
+                  <Item type="1" pattern="**.cdi"/>
+                  <Item type="1" pattern="**.contrib"/>
+                  <Item type="1" pattern="**.keep"/>
+                  <Item type="1" pattern="**.rvi"/>
+                  <Item type="1" pattern=".jsps/"/>
+                  <Item type="0" pattern="**"/>
+               </rules>
+            </filters>
+            <targetWithinJar>WEB-INF/classes</targetWithinJar>
+         </Item>
+         <Item class="oracle.jdeveloper.deploy.common.LibraryFileGroup" internalName="libraries">
+            <displayName>WEB-INF/lib</displayName>
+            <filters>
+               <rules>
+                  <Item type="0" pattern="**"/>
+               </rules>
+            </filters>
+            <selectedLibraries>
+               <Item class="java.net.URL" path="../../../../../../../jdev10g_1013__3673__jdk5/jdev/system/oracle.jdeveloper.10.1.3.36.73/Sun Jaws.library"/>
+               <Item class="java.lang.String">Custom Libraries</Item>
+            </selectedLibraries>
+            <selectionMode>0</selectionMode>
+            <targetWithinJar>WEB-INF/lib</targetWithinJar>
+         </Item>
+      </groups>
+   </fileGroups>
+   <jarURL path="war.war"/>
+   <profileDeps>
+      <Item>
+         <profileURL path="src/logtag.deploy"/>
+         <projectURL path="Pitagora.jpr"/>
+      </Item>
+      <Item>
+         <profileURL path="src/pg.deploy"/>
+         <projectURL path="Pitagora.jpr"/>
+      </Item>
+      <Item>
+         <profileURL path="src/sec.deploy"/>
+         <projectURL path="Pitagora.jpr"/>
+      </Item>
+      <Item>
+         <profileURL path="src/Tar.deploy"/>
+         <projectURL path="Pitagora.jpr"/>
+      </Item>
+   </profileDeps>
+   <properties/>
+</web-app-deployment>

@@ -1,0 +1,105 @@
+.bOver {
+  font-family: Verdana;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+
+  background-color: #99ccff;
+
+  cursor: hand;
+}
+
+.bOut {
+  font-family: Verdana;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+  
+  background-color: #5389bc;
+  
+  cursor: hand;
+}
+
+
+a:link
+{
+	COLOR:  #000000;
+	CURSOR: hand;
+	FONT-FAMILY: Verdana;
+	FONT-SIZE: 11px;
+	Text-decoration:none;
+}
+a:visited
+{
+	COLOR: #000000;
+	CURSOR: hand;
+	FONT-FAMILY: Verdana;
+	FONT-SIZE: 11px;
+	Text-decoration:none;
+}
+ a:hover
+{
+	COLOR: #000000;
+	CURSOR: hand;
+	FONT-FAMILY: Verdana;
+	FONT-SIZE: 11px;
+	Text-decoration:none;
+}
+
+
+.trOver {
+  font-family: Verdana;
+  font-size: 11px;
+  font-weight: regular;
+  color: black;
+  
+  background-color: #99ccff;
+
+  cursor: hand;
+}
+
+.trOut {
+  font-family: Verdana;
+  font-size: 11px;
+  font-weight: regular;
+  color: black;
+  
+  background-color: #ffffff;
+  
+  cursor: hand;
+}
+
+.selected {
+  font-family: Courier;
+  font-size: 11px;
+  font-weight: bold;
+  
+  background-color: #99ccff;
+  
+  cursor: hand;
+}
+
+.text
+{
+    COLOR: #006699;
+    FONT-FAMILY: Verdana,Arial;
+    FONT-SIZE: 8pt;
+    FONT-STYLE: normal
+}
+.textB
+{
+    COLOR: #004256;
+    FONT-FAMILY: Verdana,Arial;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bolder
+}

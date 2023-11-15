@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<!DOCTYPE orion-ejb-jar PUBLIC "-//Evermind//DTD Enterprise JavaBeans 1.1 runtime//EN" "http://xmlns.oracle.com/ias/dtds/orion-ejb-jar.dtd">
+<orion-ejb-jar>
+  <enterprise-beans>
+    <session-deployment name="I5_6tree"/>
+    <session-deployment name="Security"/>
+    <session-deployment name="I5_6ANAG_UTENTEejb"/>
+    <session-deployment name="I5_6PROF_UTENTEejb"/>
+    <session-deployment name="I5_6ANAG_FUNZ"/>
+    <session-deployment name="I5_2PARAM_VALORIZ_CL"/>
+    <session-deployment name="I5_2SCONTO_CL"/>
+    <session-deployment name="I5_6MEM_FUNZ_PROF_OP_EL"/>
+    <session-deployment name="Ent_Contratti"/>
+    <session-deployment name="Ent_Clienti"/>
+    <session-deployment name="Ent_TipiCausale"/>
+    <session-deployment name="Ent_OggettiFatturazione"/>
+    <session-deployment name="Ent_ProdottiServizi"/>
+    <session-deployment name="Ent_PrestazioniAggiuntive"/>
+    <session-deployment name="Ent_AnagraficaMessaggi"/>
+    <session-deployment name="Ent_Tariffe"/>
+    <session-deployment name="Ent_Fasce"/>
+    <session-deployment name="Ent_UnitaMisura"/>
+    <session-deployment name="Ent_TipiOfferte"/>
+    <session-deployment name="Ent_ClassiSconto"/>
+    <session-deployment name="Ctr_Tariffe"/>
+    <session-deployment name="Ent_Batch"/>
+    <session-deployment name="Ent_TariffeSconti"/>
+    <session-deployment name="Ctr_AssociazioniOfPs"/>
+    <session-deployment name="Ent_ClassOggFatt"/>
+    <session-deployment name="Ctr_Riba_Tariffe"/>
+    <session-deployment name="Ent_Frequenze"/>
+    <session-deployment name="Ent_Map"/>
+    <session-deployment name="Ent_TipiContratto"/>
+    <session-deployment name="Ent_TipiServizio"/>
+    <session-deployment name="Ctr_SpesaComplessiva"/>
+    <session-deployment name="Ent_AssocOggettiFatturazione"/>
+    <session-deployment name="Ent_Scarti"/>
+    <session-deployment name="Ctr_Batch"/>
+    <session-deployment name="Ctr_Scarti"/>
+    <session-deployment name="Ctr_Contratti"/>
+    <session-deployment name="Ent_Fatture"/>
+    <session-deployment name="Ent_SpesaComplessiva"/>
+    <session-deployment name="Ctr_Fatture"/>
+    <session-deployment name="Ctr_ClassiSconto"/>
+    <session-deployment name="Ctr_NoteCredito"/>
+    <session-deployment name="Ctr_ValAttiva"/>
+    <session-deployment name="Ctr_Repricing"/>
+    <session-deployment name="Ent_AssocOggettiFatturazione"/>
+    <session-deployment name="Ent_Scarti"/>
+    <session-deployment name="Ctr_Batch"/>
+    <session-deployment name="Ctr_Scarti"/>
+    <session-deployment name="Ctr_Contratti"/>
+    <session-deployment name="Ent_Fatture"/>
+    <session-deployment name="Ent_SpesaComplessiva"/>
+    <session-deployment name="Ctr_Fatture"/>
+    <session-deployment name="Ctr_ClassiSconto"/>
+    <session-deployment name="Ctr_NoteCredito"/>
+    <session-deployment name="Ctr_ValAttiva"/>
+    <session-deployment name="Ctr_Repricing"/>
+    <session-deployment name="I5_2ANAG_CICLI_FATRZEJB"/>
+    <entity-deployment name="AbortLstBMP"/>
+    <entity-deployment name="AssOfPsBMP"/>
+    <entity-deployment name="AssOfPsBMPClus"/>
+    <entity-deployment name="AssOfPsVerEsistAperteBMP"/>
+    <entity-deployment name="AssOfPsVerifEsistBMP"/>
+    <entity-deployment name="CsvBMP"/>
+    <entity-deployment name="DatiCliBMP"/>
+    <entity-deployment name="DoppioListinoBMP"/>
+    <entity-deployment name="ElaborBatchBMP"/>
+    <entity-deployment name="InsAssOfPsBMP"/>
+    <entity-deployment name="OggFattBMP"/>
+    <entity-deployment name="PeriodoRifBMP"/>
+    <entity-deployment name="ScartiBMP"/>
+    <entity-deployment name="TariffaBMP"/>
+    <entity-deployment name="TariffaXContrBMP"/>
+    <session-deployment name="AccountElabSTL"/>
+    <session-deployment name="BatchSTL"/>
+    <session-deployment name="CausaleSTL"/>
+    <session-deployment name="ClasseFattSTL"/>
+    <session-deployment name="CmbFunzioniSTL"/>
+    <session-deployment name="CmbStatiBatchSTL"/>
+    <session-deployment name="CmbUtentiSTL"/>
+    <session-deployment name="ContrattoSTL"/>
+    <session-deployment name="ElencoAccountPsSTL"/>
+    <session-deployment name="VerStrutTariffeSTL"/>
+    <session-deployment name="EstrazioniListiniSTL"/>
+    <session-deployment name="FunzionalitaSTL"/>
+    <session-deployment name="OggettoFattLstOfAssocbSTL"/>
+    <session-deployment name="ProdServSTL"/>
+    <session-deployment name="StatiElabBatchSTL"/>
+    <session-deployment name="SchedBatchSTL"/>
+    <session-deployment name="UnitaMisuraSTL"/>
+    <entity-deployment name="GestAssOfPsBMP"/>
+    <entity-deployment name="GestAssOfPsBMPClus"/>
+    <entity-deployment name="AssOfPsXContrBMP"/>
+    <entity-deployment name="AssOfPsXContrBMPClus"/>    
+    <entity-deployment name="CicloFatBMP"/>
+    <entity-deployment name="ColocationBMP"/>
+    <session-deployment name="ControlliSTL"/>
+    <session-deployment name="SitoSTL"/>
+    <session-deployment name="UnTerReteSTL"/>
+    <session-deployment name="AssOfPsXContrSTL"/>
+    <session-deployment name="FrequenzaSTL"/>
+    <session-deployment name="ModApplSTL"/>
+    <session-deployment name="AssOfPsSTL"/>
+    <session-deployment name="Ctr_Sconti"/>
+    <session-deployment name="Ent_Sconti"/>
+    <session-deployment name="OpzioniTariffaSTL"/>
+    <session-deployment name="Ent_Batch_PRE"/>
+    <session-deployment name="Ent_ExportPerSap"/>
+    <session-deployment name="CtrContrattiSTL"/>
+    <session-deployment name="CtrRepricingSTL"/>
+    <session-deployment name="EntBatchSTL"/>
+    <session-deployment name="EntContrattiSTL"/>
+    <session-deployment name="Ctr_TariffeSconti"/>
+    <session-deployment name="Ctr_Inventari"/>
+    <session-deployment name="Ent_Inventari"/>
+    <session-deployment name="GestioneScartiPopolamento"/>
+    <session-deployment max-instances="-1" name="Ent_Servizi"/>
+    <session-deployment max-instances="-1" name="Ent_Offerte"/>
+    <session-deployment max-instances="-1" name="Ent_Prodotti"/>
+    <session-deployment max-instances="-1" name="Ent_TariffeNew"/>
+    <session-deployment max-instances="-1" name="Ent_OggettoFatturazioneNew"/>
+    <session-deployment max-instances="-1" name="Ent_ModalitaApplicazione"/>
+    <session-deployment max-instances="-1" name="Ent_TipoArrotondamento"/>
+    <session-deployment max-instances="-1" name="Ent_TipoCausaleNew"/>
+    <session-deployment max-instances="-1" name="Ent_FasceNew"/>
+    <session-deployment max-instances="-1" name="Ent_ClassiScontoNew"/>
+    <session-deployment max-instances="-1" name="Ent_RegoleTariffe"/>
+    <session-deployment max-instances="-1" name="Ent_Componenti"/>
+    <session-deployment max-instances="-1" name="Ent_PrestazioniAggiuntiveNew"/>
+    <session-deployment max-instances="-1" name="Ctr_TariffeNew"/>
+    <session-deployment max-instances="-1" name="Ent_BatchNew"/>
+    <session-deployment max-instances="-1" name="Ctr_ElabAttive"/>
+    <session-deployment max-instances="-1" name="Ctr_Utility"/>
+		<session-deployment max-instances="-1" name="Ctr_Repdecomm"/>    
+    <session-deployment max-instances="-1" name="EURIBOR_CICLI_X_SERV"/>
+    <session-deployment max-instances="-1" name="Ent_TipoRelazioni"/>
+    <session-deployment max-instances="-1" name="Ctr_Catalogo"/>
+    <session-deployment max-instances="-1" name="Ent_Catalogo"/>
+	<session-deployment name="I5_2PROMOZIONI"/>
+        <session-deployment name="Ent_PromoAree"/>
+  </enterprise-beans>
+  <assembly-descriptor>
+    <default-method-access>
+      <security-role-mapping impliesAll="true" name="&lt;default-ejb-caller-role>"/>
+    </default-method-access>
+  </assembly-descriptor>
+</orion-ejb-jar>

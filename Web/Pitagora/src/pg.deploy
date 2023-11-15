@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<taglib-deployment nselem="taglib-deployment" class="oracle.jdeveloper.deploy.jar.TaglibProfile" xmlns="http://xmlns.oracle.com/jdeveloper/101303/deploy/j2ee-taglib">
+   <archiveOptions>
+      <additionalManifests/>
+      <compressed>true</compressed>
+      <hasManifest>true</hasManifest>
+      <mainClass/>
+   </archiveOptions>
+   <fileGroups>
+      <groups>
+         <Item class="oracle.jdeveloper.deploy.common.ProjectFileGroup" internalName="legacy">
+            <contributors>
+               <autoInclude>false</autoInclude>
+               <deploySourceAs>0</deploySourceAs>
+               <files>
+                  <Item path="META-INF/pg.tld"/>
+                  <Item path="com/taglib/pag/downloadTag1.java"/>
+                  <Item path="com/taglib/pag/index.java"/>
+                  <Item path="com/taglib/pag/indexTagTEI.java"/>
+                  <Item path="com/taglib/pag/next.java"/>
+                  <Item path="com/taglib/pag/pager.java"/>
+                  <Item path="com/taglib/pag/pagerTagTEI.java"/>
+                  <Item path="com/taglib/pag/pages.java"/>
+                  <Item path="com/taglib/pag/param.java"/>
+                  <Item path="com/taglib/pag/prev.java"/>
+               </files>
+               <selectionFilters/>
+            </contributors>
+            <displayName/>
+            <filters>
+               <additionalArchives/>
+               <afterFilters/>
+               <beforeFilters/>
+               <duringFilters/>
+               <selectedArchives>
+                  <archives/>
+                  <selectionMode>0</selectionMode>
+               </selectedArchives>
+            </filters>
+            <targetWithinJar/>
+         </Item>
+         <Item class="oracle.jdeveloper.deploy.common.PackagingFileGroup" internalName="legacy-project-deps">
+            <contributors>
+               <Item type="7"/>
+            </contributors>
+            <displayName>Project Dependencies</displayName>
+            <filters>
+               <rules>
+                  <Item type="1" pattern="connections.xml"/>
+                  <Item type="1" pattern="**/CVS/"/>
+                  <Item type="1" pattern="**.cdi"/>
+                  <Item type="1" pattern="**.contrib"/>
+                  <Item type="1" pattern="**.keep"/>
+                  <Item type="1" pattern="**.rvi"/>
+                  <Item type="1" pattern=".jsps/"/>
+                  <Item type="0" pattern="**"/>
+               </rules>
+            </filters>
+            <targetWithinJar/>
+         </Item>
+      </groups>
+   </fileGroups>
+   <jarURL path="../deploy/pg.jar"/>
+   <profileDeps/>
+</taglib-deployment>

@@ -1,0 +1,336 @@
+.normal
+{
+    COLOR: #000000;
+    FONT: 10px Verdana, Helvetica, sans-serif
+}
+.normalbold
+{
+    COLOR: #000000;
+    FONT: bold 10px Verdana, Helvetica, sans-serif
+}
+.title
+{
+    COLOR: #cd0104;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-STYLE: normal;
+    FONT-VARIANT: normal;
+    FONT-WEIGHT: bold
+}
+.tabletitle
+{
+    COLOR: #ffffff;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-STYLE: normal;
+    FONT-VARIANT: normal;
+    FONT-WEIGHT: bold
+}
+.normalwhite
+{
+    COLOR: #ffffff;
+    FONT: 10px Verdana, Helvetica, sans-serif
+}
+.normalboldwhite
+{
+    COLOR: #ffffff;
+    FONT: bold 10px Verdana, Helvetica, sans-serif
+}
+.text
+{
+    COLOR: #006699;
+    FONT-FAMILY: Verdana,Arial;
+    FONT-SIZE: 8pt;
+    FONT-STYLE: normal
+}
+.textNumber
+{
+	COLOR: #006699;
+	FONT-FAMILY: Verdana,Arial;
+	FONT-SIZE: 8pt;
+	FONT-STYLE: normal;
+	text-align : right;
+}
+.red
+{
+    COLOR: #cc0000;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 8pt
+}
+.white
+{
+    COLOR: white;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bolder;
+    text-decoration: none;
+}
+.text2
+{
+    COLOR: #004256;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bolder
+}
+.black
+{
+    COLOR: #666666;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 8pt
+}
+.blackB
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    COLOR: #666666;
+    FONT-FAMILY: Verdana
+}
+.textMsg
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 12pt;
+    COLOR: #006699;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana,Arial
+}
+
+.textMsgDett
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    COLOR: RED;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana,Arial
+}
+
+.textB
+{
+    COLOR: #004256;
+    FONT-FAMILY: Verdana,Arial;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bolder
+}
+.redB
+{
+    COLOR: #cc0000;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bolder
+}
+a:active
+{
+    COLOR: #004256
+}
+a:link
+{
+    COLOR: #004256
+}
+a:visited
+{
+    COLOR: #004256
+}
+a:hover
+{
+color: #006699;
+text-decoration:underline
+}
+A.white:visited
+{
+    COLOR: white;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    text-decoration: none
+}
+A.white
+{
+    COLOR: white;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    text-decoration: none
+}
+A.white:hover
+{
+    color: #d5ddf1;
+    text-decoration: underline
+}
+
+.txtConferma 
+{
+	FONT-FAMILY: Verdana, Helvetica;
+	FONT-SIZE: 20pt;
+	TEXT-ALIGN: center;
+	COLOR: #2F5D80
+}
+.label
+{
+	font-family:Arial, Verdana, Helvetica, Helv;
+	font-size:10px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#9892BC;
+}
+.alert
+{
+	font-family:Arial, Verdana, Helvetica, Helv;
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#FF0000;
+}
+.blackB
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    COLOR: #666666;
+    FONT-FAMILY: Verdana
+}
+.textSel
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    COLOR: #006699;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial
+}
+DIV
+{
+    SCROLLBAR-FACE-COLOR: #cfdbe9;
+    OVERFLOW: auto;
+    WIDTH: 100%;
+    HEIGHT: 100%
+}
+.row1
+{
+    FONT-SIZE: 8pt;
+    COLOR: #006699;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #cfdbe9
+}
+.row2
+{
+    FONT-SIZE: 8pt;
+    COLOR: #006699;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #ebf0f0
+}
+
+.row3
+{
+    FONT-SIZE: 8pt;
+    COLOR: #252850;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #2271B3
+}
+.row4
+{
+    FONT-SIZE: 8pt;
+    COLOR: #252850;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #49678D
+}
+.row5
+{
+    FONT-SIZE: 8pt;
+    COLOR: #252850;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #1B5583
+}
+.row1_new
+{
+    FONT-SIZE: 8pt;
+    COLOR: #ff0000;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR:  #cfdbe9
+}
+.row2_new
+{
+    FONT-SIZE: 8pt;
+    COLOR: #ff0000;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #ebf0f0
+}
+.rowSpecial
+{
+    FONT-SIZE: 8pt;
+    COLOR: #006699;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: moccasin
+}
+.rowHeader
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #0a6b98
+}
+.list
+{
+    FONT-SIZE: 8pt;
+    WIDTH: 100%;
+    COLOR: #006699;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    HEIGHT: 100%
+}
+.textList
+{
+    FONT-SIZE: 8pt;
+    WIDTH: 100%;
+    COLOR: #006699;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana,Arial
+}
+.textListRosso
+{
+    FONT-SIZE: 10pt;
+    WIDTH: 100%;
+    COLOR: #ff0000;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana,Arial
+}
+.rowSpecial2
+{
+    FONT-SIZE: 8pt;
+    COLOR: #006699;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #FBFEC7
+}
+.rowSpecial3
+{
+    FONT-SIZE: 8pt;
+    COLOR: #006699;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #FBD5D0
+}
+.textBold
+{
+    COLOR: #006699;
+    FONT: bold 10pt Verdana, Arial, sans-serif
+}
+.textBoldMod
+{
+    COLOR: #ff0000;
+    FONT: bold 10pt Verdana, Arial, sans-serif
+}
+.textBHide
+{
+    COLOR: #004256;
+    FONT-FAMILY: Verdana,Arial;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bolder;
+    visibility: hidden 
+}

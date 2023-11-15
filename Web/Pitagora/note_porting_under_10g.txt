@@ -1,0 +1,82 @@
+Innalzamento di JPUB a JDeveloper 10g
+ 
+
+Problemi riscontrati :
+
+1.      perso in riferimento al file jaws.jar
+
+2.      utilizzato il metodo deprecato encode(String) della classe java.net.URLEncoder
+
+3.      utilizzo della costante nei tag jsp BodyTag. EVAL_BODY_TAG
+
+ 
+
+soluzioni
+
+il file jaws nella nuova versione del jdk è già inclusa solo che si chiama plugin.jar 
+Utilizzare il metodo della classe java.net.URLEncoder.encode(String, String) l’unico problema è che il metodo non era presente nella versione 1.3 del jdk.
+Tale nuovo metodo prende come secondo parametro il Charset (Stringa) ed inoltre genera eccezione. 
+sostituzione della costante con EVAL_BODY_AGAIN 
+
+
+
+
+
+
+
+1) effettuato replace da UltraEdit (replace in files):
+
+
+	java.net.URLEncoder.encode(^(*^))
+
+	java.net.URLEncoder.encode(^1,com.utl.StaticContext.ENCCharset)
+
+	NOTA: 
+		dopo questo replace è necessario 
+		apportare delle modifiche correttive per pochi casi
+		segnalati come errori in fase di compilazione.
+
+
+
+
+2)
+	aggiunta costante 
+	public final static String ENCCharset = "ISO-8859-1";
+
+	in com.utl.StaticContext;
+
+3) 	modificato dichiarazione metodo in pager.java
+
+		da
+		public void addParam(String name, String value)
+		a
+		public void addParam(String name, String value) throws Exception
+		
+4) modificato metodo in param.java
+
+da 
+  public int doStartTag() throws JspException
+  {
+		super.doStartTag();
+		      pagerTag.addParam(name, value);
+
+		return EVAL_BODY_INCLUDE;
+  }
+
+a
+
+  public int doStartTag() throws JspException
+  {
+		super.doStartTag();
+		try {
+		      pagerTag.addParam(name, value);
+		    }catch(Exception ex){
+		      throw new JspException(ex.getMessage());
+		    }
+
+		return EVAL_BODY_INCLUDE;
+  }
+
+
+
+

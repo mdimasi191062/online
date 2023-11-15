@@ -1,0 +1,214 @@
+<html>
+<head>
+    <SCRIPT LANGUAGE="JavaScript" SRC="../../common/js/security.js">
+    </SCRIPT>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+    <LINK REL="stylesheet" HREF="../../css/Style.css" TYPE="text/css">
+
+    <title>Password Services</title>
+    <SCRIPT LANGUAGE="JavaScript">
+
+	function cod(charat)
+	{
+	  document.Login.elements["USERNAME"].value = document.Login.elements["USERNAME"].value + charat;
+    }
+
+
+function delchar(){
+	if(document.Login.elements["USERNAME"].value.length > 0)
+	{
+		document.Login.elements["USERNAME"].value = (document.Login.elements["USERNAME"].value).substring(0,document.Login.elements["USERNAME"].value.length-1);
+	}
+}
+	
+    function resetCredFields()
+    {
+        document.Login.PASSWORD.value = "";
+    }
+    function checkIfFiledsIsNull()
+    {
+        if (document.Login.USERNAME.value.length==0) {
+            document.Login.USERNAME.focus();
+        } else
+            if (document.Login.PASSWORD.value.length==0) {
+            document.Login.PASSWORD.focus();
+        }
+    }
+
+    function submitForm()
+    {
+        if (document.Login.USERNAME.value.length==0) {
+            alert('Il campo Nome Utente è obbligatorio');
+            document.Login.USERNAME.focus();
+            return(false);
+        }
+        if (document.Login.PASSWORD.value.length==0) {
+            alert('Il campo Password è obbligatorio');
+            document.Login.PASSWORD.focus();
+            return(false);
+        }
+        document.CryptoApplet.setData(document.Login.USERNAME.value,document.Login.PASSWORD.value);
+        document.Login.PASSWORD.value="";
+        document.Login.submit();
+    }
+
+    function risposta(valore)
+    {
+        //  recupero il valore dall'applet. Questa funzione e' richiamata dall' applet
+        document.Login.PWD_HIDDEN.value=valore;
+    }
+    
+    </SCRIPT>
+</head>
+
+    <body BGCOLOR="#ffffff" TEXT="#000000" onLoad="if ('Navigator' == navigator.appName) document.forms[0].reset();resetCredFields();document.Login.USERNAME.focus();" onfocus="checkIfFiledsIsNull();">
+
+    <form NAME="Login" ACTION="../../Controller" METHOD="POST">
+        <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td valign="top"><img src="../../common/images/body/pixel.gif" width="6" height="10"></td>
+                <td>
+                    <table width="500" border="0" cellspacing="0" cellpadding="0" >
+                        <tr>
+                            <td valign="top" width="80"><img src="../../common/images/body/login.gif" width="80" height="35" border="0"></td>
+                            <td width="420" valign="top"><img src="../../common/images/body/pixel.gif" width="420" height="35"></td>
+                        </tr>
+                    </table>
+                    <table width="502" border="0" cellspacing="0" cellpadding="1" bgcolor="#ffffff">
+                        <tr>
+                            <td bgcolor="#FFFFFF"><img src="../../common/images/body/pixel.gif" width="1" height="3"></td>
+                        </tr>
+                    </table>
+                    <table width="502" border="0" cellspacing="0" cellpadding="1" bgcolor="#006699">
+                        <tr>
+                            <td>
+                                <table width="502" border="0" cellspacing="0" cellpadding="0" bgcolor="#8C96B4">
+                                    <tr>
+                                        <td bgcolor="#006699" class="white" valign="top" width="88%">&nbsp;Inserisci i 
+                                        tuoi dati identificativi</td>
+                                        <td bgcolor="#FFFFFF" class="white" align="center" width="12%"><img src="../../common/images/body/tre.gif" width="28" height="11"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table bgcolor="#ebf2ff" border="0" cellPadding="0" cellSpacing="0" width="500">
+                        <tr>
+                            <td>&nbsp;</td> 
+							<tr>  
+							    <td> </td>
+                            </tr>  
+                            
+                            <td align="center"> 
+							
+                                <table bgcolor="#006699" border="0" cellPadding="0" cellSpacing="0"  width="98%">
+                                    <!-- inizio tabella sfondo scuro -->
+                                    <tr>
+                                        <td>&nbsp;</td>
+										<td>&nbsp;</td>
+                                        
+                                    </tr> 
+									 <!-- inizio BOTTONI -->
+                                    <tr>
+                                        <td class='white' valign='center'>&nbsp;</td>
+                                        <TD>
+										    <A href="javascript:cod(0)">
+										    <IMG src="../images/bt_0.gif" border=0></A>
+										
+										    <A href="javascript:cod(1)">
+										    <IMG src="../images/bt_1.gif" border=0></A>
+										
+										    <A href="javascript:cod(2)">
+										    <IMG src="../images/bt_2.gif" border=0></A>
+										
+										    <A href="javascript:cod(3)">
+										    <IMG src="../images/bt_3.gif" border=0></A>
+										
+										    <A href="javascript:cod(4)">
+										    <IMG src="../images/bt_4.gif" border=0></A>
+										
+										    <A href="javascript:cod(5)">
+										    <IMG src="../images/bt_5.gif" border=0></A>
+										
+										    <A href="javascript:cod(6)">
+										    <IMG src="../images/bt_6.gif" border=0></A>
+										
+										    <A href="javascript:cod(7)">
+										    <IMG src="../images/bt_7.gif" border=0></A>
+										
+										    <A href="javascript:cod(8)">
+										    <IMG src="../images/bt_8.gif" border=0></A>
+										
+										    <A href="javascript:cod(9)">
+										    <IMG src="../images/bt_9.gif" border=0></A>
+										</TD>
+                                   </tr>	
+								
+									<!-- FINE BOTTONI -->
+                                    <tr>
+                                        <td class='white' valign='center'>&nbsp;  Nome Utente: </td>
+                                        <td>	  
+										    
+                                            <input type="text" name="USERNAME" size="30" style="margin-left: 1px;" onblur="document.Login.PASSWORD.focus();">
+											<A href="javascript:delchar()"> <IMG src="..//images/bt_cancellaNew.gif" border=0></A>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class='white'>&nbsp;  Password: </td>
+                                        <td >
+                                            <input type="password" name="PASSWORD" size="30" style="margin-left: 1px;">
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><img src="../../common/images/body/log3.gif" align="right"></td>
+                        </tr>
+                        <tr >
+                            <td>&nbsp;</td>		   
+                        </tr>
+						
+						<tr>	
+						    						
+                            <td  colspan="4" NOWRAP align="CENTER" >
+                                <input type="button" name="Invia" value="Invia" onClick="submitForm();">
+                                <input type="reset" value="Annulla">
+                            </td>
+						</tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <INPUT type="HIDDEN" name="PWD_HIDDEN">
+        <INPUT type="HIDDEN" name="ACTION" value="LOGIN">
+    </form>
+    <APPLET CODE="com.applet.CryptoApplet.class" NAME="CryptoApplet" ARCHIVE="jar.jar"  CODEBASE="../../" HEIGHT="0" WIDTH="0" MAYSCRIPT>
+    </APPLET>
+    <table width="502" border="0" cellspacing="0" cellpadding="0" >
+        <tr>
+            <td  class="textB" valign="top" width="88%">&nbsp;</td>
+        </tr>	   
+        <tr>
+            <td align="center" class="text" valign="top" width="88%">Per inserire lo Username clicca i numeri sul 
+            <B>"tastierino"</B>. In questo modo, eventuali virus spyware 
+            presenti sul tuo pc non saranno in grado di memorizzare il tuo 
+            Username.</td>
+        </tr>
+    </table>
+
+
+    </body>
+    <HEAD>
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <META HTTP-EQUIV="Expires" CONTENT="-1">
+    </HEAD>
+</html>

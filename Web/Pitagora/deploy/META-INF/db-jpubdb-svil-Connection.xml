@@ -1,0 +1,27 @@
+<?xml version = '1.0'?>
+<!DOCTYPE connections>
+<connections>
+   <connection>
+      <JDBC_PORT>1521</JDBC_PORT>
+      <ConnectionType>JDBC</ConnectionType>
+      <HOSTNAME>10.50.16.8</HOSTNAME>
+      <DeployPassword>true</DeployPassword>
+      <user>collaudo</user>
+      <ConnectionName>Pitagora</ConnectionName>
+      <URL>jdbc:oracle:oci:@(DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = jpubdb1-vip)(PORT = 1521))
+    (ADDRESS = (PROTOCOL = TCP)(HOST = jpubdb2-vip)(PORT = 1521))
+    (LOAD_BALANCE = yes)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = jpub2)
+    )
+  )</URL>
+      <ServiceName>JPUB2</ServiceName>
+      <PWD>
+         <![CDATA[055A7F5119B68E61E77594852B16D28A8B27D6FE19968AAF50]]>
+      </PWD>
+      <JdbcDriver>oracle.jdbc.OracleDriver</JdbcDriver>
+      <ORACLE_JDBC_TYPE>thin</ORACLE_JDBC_TYPE>
+   </connection>
+</connections>
